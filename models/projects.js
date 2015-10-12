@@ -7,6 +7,9 @@ All code related to the Items collection goes here.
 /+ ---------------------------------------------------- */
 
 Projects = new Mongo.Collection('projects');
+Tags.TagsMixin(Projects);
+
+Projects.allowTags(function (userId) { return true; });
 
 // Allow/Deny
 
