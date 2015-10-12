@@ -1,0 +1,87 @@
+section.featured_on {
+  background-color: #009ADF;
+}
+
+a#atlwdg-trigger {
+    text-align: center;
+    font-size: larger;
+}
+
+hero.container {
+
+margin-left: 60%;
+}
+a.submitidea {
+    margin-left: 400px;
+}
+
+blockquote {
+    color: white;
+}
+
+body {
+    font-family: "AvenirNextLTW01-Regular",Helvetica,Arial,sans-serif;
+}
+
+.about .features_list ul li span {
+font-size: 20px;
+font-weight:200;
+}
+
+h3.text.animated.wow.fadeInLeft.animated {
+    color: #black;
+    font-weight: : 400;
+    margin-left: 20px;
+    font-family: AvenirNextLTW01-Regular;
+}
+
+.hero .caption {
+background-color: rgba(255,255,255,0.75);
+}
+
+.hero .caption h1{
+	color: #1E5AA0;
+    margin-left: 20px;
+    font-weight: 500;
+	font-family: AvenirNextLTW01-Regular;
+}
+
+.hero .caption h3 {
+	color: black;
+}
+
+a.app_store_btn {
+    margin-left: 40px;
+	color:#009ADF;
+	font-family: "AvenirNextLTW01-Bold", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	border-color: #009ADF;
+}
+
+a.app_store_btn:hover,
+a.app_store_btn:focus {
+	color: #333333 !important;
+	border-color:#333333 !important;
+}
+
+a.app_link{
+	text-transform: lowercase;
+	letter-spacing: .5px;
+	color: #009ADF;
+	
+}
+
+a.app_link:hover,
+a.app_link:focus{
+	text-decoration: none;
+	color: #333333 !important;
+	border-color:#333333 !important;
+	
+}
+
+
+strong {
+    font-family: AvenirNextLTW01-Bold;
+    font-weight: 800;
+}
