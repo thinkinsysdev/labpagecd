@@ -51,7 +51,7 @@ background-color: rgba(255,255,255,0.75);
 }
 
 a.app_store_btn {
-    margin-left: 40px;
+    margin-left: 40px !important;
 	color:#009ADF;
 	font-family: "AvenirNextLTW01-Bold", Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -61,6 +61,7 @@ a.app_store_btn {
 
 a.app_store_btn:hover,
 a.app_store_btn:focus {
+	margin-left: 40px !important;
 	color: #333333 !important;
 	border-color:#333333 !important;
 }
