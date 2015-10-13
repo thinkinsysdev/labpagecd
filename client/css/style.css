@@ -219,3 +219,8 @@ ul.nav.navbar-nav.navbar-right li a {
 	a.linkedin:hover {
 		background-color: rgb(1, 116, 179) !important;
 	}
+form#addProjectForm {
+    width: 500px;
+    margin-left: 25%;
+    margin-top: 80px;
+}
