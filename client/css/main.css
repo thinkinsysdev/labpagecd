@@ -29,44 +29,6 @@
 
 
 
-/*		Fonts		*/
-@font-face {
-    font-family: 'AvenirNextLTW01-DemiCn';
-   src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
-
-   src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
-
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'AvenirNextLTW01-DemiCn';
-   src:url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
-
-src:url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),url("../fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),url("../fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),url("../fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg");
-
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'AvenirNextLTW01-BoldCnI 721320';
-  src:url("../fonts/07690b8a-c348-4c53-8de3-59f7cfef9ee8.eot?#iefix");
-
-src:url("../fonts/07690b8a-c348-4c53-8de3-59f7cfef9ee8.eot?#iefix") format("eot"),url("../fonts/ff039068-be8b-415c-b1a9-24eedee1c3ab.woff") format("woff"),url("../fonts/cdd2cecb-bd0e-41e5-9ecd-ef60f52a35be.ttf") format("truetype"),url("../fonts/390c08bc-8d21-4af3-95a1-a73c21f189cd.svg#390c08bc-8d21-4af3-95a1-a73c21f189cd") format("svg");
-
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 
 
@@ -226,7 +188,7 @@ header .social li:first-child{
 
 .hero .caption h1{
 	color: #000000;
-	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 34px;
 	font-weight: bold;
 	word-break: break-word;
@@ -234,9 +196,19 @@ header .social li:first-child{
 
 .hero .caption p{
 	color: #000000;
-	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
+	margin: 15px 0 35px 0;
+}
+
+
+.hero .caption .q{
+	color: #1E5AA0;
+	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 600;
 	margin: 15px 0 35px 0;
 }
 
@@ -443,7 +415,7 @@ a.app_link{
 	display: block;
 	position: relative;
 	color: #6c6c6c !important;
-	font-family: "AvenirNextLTW01-BoldCnI 721320", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 44px;
 	text-indent: 25px;
@@ -506,7 +478,7 @@ a.app_link{
 
 .app_features h1{
 	color: #fff;
-	font-family: "AvenirNextLTW01-BoldCnI 721320", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 20px;
 	margin: 50px 0 0 0;
 	word-break: break-word;
@@ -514,7 +486,7 @@ a.app_link{
 
 .app_features p{
 	color: #fff;
-	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight:200;
 	margin: 30px 0 0 0;
@@ -572,7 +544,7 @@ a.app_link{
 
 .testimonials .testimonials_list blockquote .author{
 	color: #4b4848;
-	font-family: "AvenirNextLTW01-BoldCnI 721320", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	margin-bottom: 10px; 
 }
