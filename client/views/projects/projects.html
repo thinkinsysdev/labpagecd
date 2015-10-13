@@ -14,6 +14,9 @@
 <template name="projects">
 	<div class="pagecontainer">
 		<h2> Projects: </h2>
+
+
+
 		<div class="container">
 		<!-- 
 		<div class="row">
@@ -51,17 +54,20 @@
 			{{#each projects}}
     		<div class="[ col-sm-6 col-md-4 ]">
 				<div class="[ info-card ]">
-					<img style="width: 100%" src="/img/viewfinder-medium.jpg" />
+					<img style="width: 100%" src={{imgurl}} />
 					<div class="[ info-card-details ] animate">
 						<div class="[ info-card-header ]">
 							<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>
-							<h3> aka not a real person </h3>
+							<h3 class="tags"> {{epicTopic}} </h3>
+							<!--<h3> aka not a real person </h3> -->
 						</div>
 						<div class="[ info-card-detail ]">
 							<!-- Description -->
 							<p>People often say that beauty is in the eye of the beholder, and I say that the most liberating thing about beauty is realizing that you are the beholder. This empowers us to find beauty in places where others have not dared to look including inside ourselves.</p>
+
 						</div>
-					</div>
+
+ 					</div>
 				</div>
 			</div>
 			{{/each}}

@@ -24,6 +24,6 @@ Meteor.publish('allProjects', function() {
 
 // Publish a single item
 
-Meteor.publish('singleItem', function(id) {
+Meteor.publish('singleProject', function(id) {
   return Projects.find(id);
 });

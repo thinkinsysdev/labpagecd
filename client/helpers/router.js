@@ -99,6 +99,10 @@ Router.map(function() {
 
   // Pages
 
+  this.route('addProject', {
+    path:'/addProject'
+  })
+
   this.route('overview', {
     path: '/'
   });

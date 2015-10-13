@@ -1,0 +1,17 @@
+<template name="addProject">
+<div class="pagecontainer">
+
+   <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
+   {{#autoForm collection="Projects" id="addProjectForm" type="insert"}}
+   <fieldset>
+   	<legend> Add a Project </legend>
+   	{{> afQuickField name='title'}}
+   	{{> afQuickField name='summary' rows = 3}}
+	{{> afQuickField name='imgurl'}}
+	{{> afQuickField name='epic' options=EpicOptions}}
+
+   </fieldset>
+   <button type="submit" class="btn btn-primary"> Insert </button>
+   {{/autoForm}}
+</div>
+</template>
