@@ -25,7 +25,12 @@ timmyg:wow
 natestrauser:jquery-scrollto
 iron:router
 patrickleet:tags
-msavin:mongol
 aldeed:autoform
 aldeed:collection2
-houston:admin
+dburles:collection-helpers
+accounts-base
+accounts-password
+alanning:roles
+yogiben:admin
+check
+accounts-ui
