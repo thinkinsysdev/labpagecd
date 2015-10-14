@@ -86,3 +86,50 @@ strong {
     font-family: AvenirNextLTW01-Bold;
     font-weight: 800;
 }
+
+/* Styling for blog people page */
+.profileShort{ border-bottom:1px solid #ddd;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.profiles {
+	display: inline-block;
+	margin-left: 25%;
+}
+
+.profile {
+
+
+}
+
+p.profileDesc {
+    margin-top: 30px;
+}
+
+.profileName h1{
+	color: #009ADF;
+	font-weight:200 !important;
+	font-family: "AvenirNextLTW01-Regular";
+	font-size:28px;
+}
+
+.label {
+	font-size:85% !important;
+
+}
+
+button.fa.fa-envelope-o.pull-right {
+    margin-top: 10px;
+    background-color: #009ADF;
+    color: white;
+    border-radius: 5px;
+}
+
+.col-md-8.profileShort {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+a.emailButton {
+    color: white !important;
+}

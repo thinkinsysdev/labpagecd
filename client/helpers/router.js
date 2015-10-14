@@ -109,6 +109,7 @@ Router.map(function() {
 
   this.route('people');
 
+  this.route('blogPeople');
 
   // Users
 
