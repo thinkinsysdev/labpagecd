@@ -29,6 +29,11 @@ Projects.attachSchema(new SimpleSchema({
     label: "Link to featured image",
     optional: true
   },
+  exturl: {
+    type: String,
+    label: "Link to Confluence/Sharepoint",
+    optional: false
+  },
   labcontactname: {
     type: String,
     label: "Lab Contact for Project",

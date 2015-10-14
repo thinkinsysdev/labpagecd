@@ -107,9 +107,13 @@ Router.map(function() {
     path: '/'
   });
 
-  this.route('people');
+  this.route('people', {
+    path: '/people',
+    template: 'profiles'
 
-  this.route('blogPeople');
+  });
+
+
 
   // Users
 
