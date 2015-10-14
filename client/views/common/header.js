@@ -15,6 +15,16 @@ Template.header.events({
 
 Template.header.rendered = function () {
 
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            jQuery("#submitidea").click(function(e) {
+                e.preventDefault();
+                console.log('Clicked the submit button');
+                showCollectorDialog();
+            });
+        }
+    };
+
 
 /**
  * This object controls the nav bar. Implement the add and remove
