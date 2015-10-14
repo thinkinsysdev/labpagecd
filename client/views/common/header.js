@@ -10,10 +10,17 @@ Template.header.helpers({
 Template.header.events({
   'click .log-out': function () {
     Meteor.logout();
+  },
+  'click a.submitidea': function() {
+                console.log('Clicked submit button');
+                showCollectorDialog();
+            }
   }
+
 })
 
 Template.header.rendered = function () {
+    console.log('In the header rendered function');
 
     window.ATL_JQ_PAGE_PROPS = {
         "triggerFunction": function(showCollectorDialog) {
