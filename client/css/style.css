@@ -8,11 +8,11 @@ position: relative;
 	/*margin-left:5%;*/
 	height: 60px;
 	z-index: 99;
-	background-color: #1E5AA0;
-	background-image: -moz-linear-gradient(bottom, #1E5AA0 0%, #1E5AA0 0.27%, #33AEE5 99.46%, #33AEE5 100%);
-	background-image: -o-linear-gradient(bottom, #1E5AA0 0%, #1E5AA0 0.27%, #33AEE5 99.46%, #33AEE5 100%);
-	background-image: -webkit-linear-gradient(bottom, #1E5AA0 0%, #1E5AA0 0.27%, #33AEE5 99.46%, #33AEE5 100%);
-	background-image: linear-gradient(bottom, #1E5AA0 0%, #1E5AA0 0.27%, #33AEE5 99.46%, #33AEE5 100%);
+	background-color: #009ADF;
+	background-image: -moz-linear-gradient(bottom, #009ADF 0%, #009ADF 0.27%, #33AEE5 99.46%, #33AEE5 100%);
+	background-image: -o-linear-gradient(bottom, #009ADF 0%, #009ADF 0.27%, #33AEE5 99.46%, #33AEE5 100%);
+	background-image: -webkit-linear-gradient(bottom, #009ADF 0%, #009ADF 0.27%, #33AEE5 99.46%, #33AEE5 100%);
+	background-image: linear-gradient(bottom, #009ADF 0%, #009ADF 0.27%, #33AEE5 99.46%, #33AEE5 100%);
 }
 
 .navbar-fixed-top {
@@ -27,7 +27,7 @@ position: relative;
 a.navbar-brand {
     color: white !important;
     font-family: AvenirNextLTW01-Regular;
-    font-weight: 900;
+    font-weight: 100;
     }
 
 ul.nav.navbar-nav.navbar-right li a {
