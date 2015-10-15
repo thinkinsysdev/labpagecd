@@ -1,4 +1,5 @@
 <template name="addProject">
+{{#if isAdmin}}
 <div class="pagecontainer">
 
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
@@ -15,4 +16,9 @@
    <button type="submit" class="btn btn-primary"> Insert </button>
    {{/autoForm}}
 </div>
+{{else}}
+   <div class="pagecontainer">
+      You have to login to view this page
+   </div>
+{{/if}}
 </template>

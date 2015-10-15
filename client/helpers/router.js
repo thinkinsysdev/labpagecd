@@ -71,19 +71,39 @@ Router.map(function() {
   });
 
  this.route('projects', {
+    //path: '/projects/:epic',
     waitOn: function () {
 
-        console.log('In the WaitOn function');
+      console.log('In the WaitOn function');
       return Meteor.subscribe('allProjects');
     },
     data: function () {
 
-        console.log('In the data function');
+        console.log('In the data function ' + this.params.epic);
       return {
         projects: Projects.find()
       }
     }
   });
+
+ this.route('projects/:epic', {
+    //path: '/projects/:epic',
+    template: 'projects',
+    waitOn: function () {
+
+      console.log('In the WaitOn function');
+      //return Meteor.subscribe('allProjects');
+    },
+    data: function () {
+
+        console.log('In the data function ' + this.params.epic);
+        console.log(Projects.find( {epic : this.params.epic}).count());
+      return {
+        projects: Projects.find( {epic : this.params.epic})
+      }
+    }
+  });
+
 
   this.route('project', {
     path: '/projects/:_id',

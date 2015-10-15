@@ -11,11 +11,12 @@ Template.header.events({
   'click .log-out': function () {
     Meteor.logout();
   },
-  'click a.submitidea': function() {
+  'click #submitidea': function () {
                 console.log('Clicked submit button');
+                alert('Show Dialog');
                 showCollectorDialog();
             }
-  }
+  
 
 })
 

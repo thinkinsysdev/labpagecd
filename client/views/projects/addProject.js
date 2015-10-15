@@ -5,6 +5,16 @@ Template.addProject.helpers({
       {label: "Mobile Computing", value:  "Mobile Computing"},
       {label: "Digital Workspace", value: "Digital Workspace"}
     ]
+    },
+    isAdmin: function() {
+    	var currentUser = Meteor.user();
+    // Is this hackable?
+    if (null !== currentUser) {
+        if ('tmb' === currentUser.username) {
+            return true;
+        }
+    }
+
     }
 	
 });
