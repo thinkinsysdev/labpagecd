@@ -368,7 +368,7 @@ a.app_link{
 /*		About section 		*/
 
 .about{
-	padding: 100px 0;
+	padding: 40px 0 60px 0;
 }
 
 .about .iphone{
@@ -718,7 +718,7 @@ a.app_link{
 /*		Footer 		*/
 
 footer{
-	padding: 100px 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -731,7 +731,7 @@ footer .app_platform li:first-child{
 }
 
 footer .copyright{
-	margin-top: 60px;
+	margin-top: 0px;
 	color: #757171;
 	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
 	font-size: 12px;
