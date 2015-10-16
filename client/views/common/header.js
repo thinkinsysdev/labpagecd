@@ -4,7 +4,18 @@ Template.header.helpers({
   },
   isLoggedIn: function () {
     return !!Meteor.user();
-  }
+  },
+  isAdmin: function() {
+    var currentUser = Meteor.user();
+    console.log(currentUser.roles);
+    // Is this hackable?
+    if (null !== currentUser) {
+        if ('tmb' === currentUser.username) {
+            return true;
+        }
+    }
+
+    }
 })
 
 Template.header.events({

@@ -36,6 +36,9 @@
                         <li><a href="{{pathFor 'people'}}">People</a></li>
                         <li><a href="{{pathFor 'projects'}}">Projects</a></li>
                         <li><a id="submitidea" href="">Submit Idea</a></li>
+                        {{#if isAdmin}}
+                        <li><a href="{{pathFor 'addProject'}}">Add Project</a></li>
+                        {{/if}}
                     </ul>
                 </div><!-- /.nav-collapse -->
             </div><!-- /.container -->

@@ -119,9 +119,7 @@ Router.map(function() {
 
   // Pages
 
-  this.route('addProject', {
-    path:'/addProject'
-  })
+  this.route('addProject');
 
   this.route('overview', {
     path: '/'
@@ -138,9 +136,5 @@ Router.map(function() {
   // Users
 
   this.route('login');
-
-  this.route('signup');
-
-  this.route('forgot');
 
 });
