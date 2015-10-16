@@ -12,14 +12,15 @@
 -->
 
 <template name="projects">
-	<div class="pagecontainer">
+<div class="container">
+  <div class="pagecontainer">
 		<div class="projectPortfolio">
 		<!-- <h2> Projects: </h2> -->
 				
 		<div class="item">
-		    <div class="item-content-block">
+		<!--    <div class="item-content-block">
 		    	<div class="block-title">Projects</div>
-		    </div>
+		    </div> -->
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'projects'}}>All</a>
 		    	<a id="filter" href="#">Mobile Computing</a> 
@@ -30,44 +31,13 @@
 		</div>
 
 
-		<div class="container">
-		<!-- 
-		<div class="row">
-			{{#each projects}}
-			<div class="[ col-sm-6 col-md-offset-2 col-md-4 ]">
-				<div class="[ info-card ]">
-					<img style="width: 100%" src="/img/viewfinder-medium.jpg" />
-					<div class="[ info-card-details ] animate">
-						<div class="[ info-card-header ]">
-							<h1> Robert McIntosh </h1>
-							<h3> aka Mouse0270 </h3>
-							<li><a href="{{pathFor "project"}}"> {{title}}</a></li>
-						</div>
-						<div class="[ info-card-detail ]">
-							<! Description 
-							<p>The idea of creating something out of nothing has always generated a passion in my heart. This is what lead me to website development. I can literally create little worlds that hopefully thousands of people can see and even experience.</p>
-							<div class="social">
-								<a href="https://www.facebook.com/rem.mcintosh" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-
-								<a href="https://twitter.com/Mouse0270" class="[ social-icon twitter ] animate"><span class="fa fa-twitter"></span></a>
-
-								<a href="https://github.com/mouse0270" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-
-								<a href="https://plus.google.com/u/0/115077481218689845626/posts" class="[ social-icon google-plus ] animate"><span class="fa fa-google-plus"></span></a>
-
-								<a href="www.linkedin.com/in/remcintosh/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{{/each}}
-		</div> -->
+	
+	
 		<div class="row">
 			{{#each projects}}
     		<div class="[ col-sm-6 col-md-4 ]">
 				<div class="[ info-card ]">
-					<img style="width: 100%" src={{imgurl}} />
+					<img style="width: 100%" src="/img/sample_300.jpg" /> <!--src={{imgurl}}-->
 					<div class="[ info-card-details ] animate">
 						<div class="[ info-card-header ]">
 							<!--<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>-->
@@ -87,6 +57,6 @@
 			{{/each}}
 		</div>
 	</div>
-	</div>
+</div>
 </div>
 </template>

@@ -1,6 +1,7 @@
 <template name="addProject">
 {{#if isAdmin}}
-<div class="pagecontainer">
+<div class="container">
+  <div class="pagecontainer">
 
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
    {{#autoForm collection="Projects" id="addProjectForm" type="insert"}}
@@ -15,10 +16,13 @@
    </fieldset>
    <button type="submit" class="btn btn-primary"> Insert </button>
    {{/autoForm}}
-</div>
+ </div>
+  </div>
 {{else}}
-   <div class="pagecontainer">
+<div class="container">
+  <div class="pagecontainer">
       You have to login to view this page
-   </div>
+ </div>
+  </div>
 {{/if}}
 </template>

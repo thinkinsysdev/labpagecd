@@ -27,14 +27,14 @@ position: relative;
 a.navbar-brand {
     color: white !important;
     font-family: AvenirNextLTW01-Regular;
-    font-weight: 100;
+    font-weight: 300;
+    font-size:1.6em;
     }
 
 ul.nav.navbar-nav.navbar-right li a {
 	 color: white !important;
     font-family: AvenirNextLTW01-Regular;
-    font-weight: 900;
-    font-size:16px;
+    font-size:1.4em;
 
 }
 
@@ -114,6 +114,8 @@ ul.nav.navbar-nav.navbar-right li a {
 		padding: 0 15px;
 		background: rgb(255, 255, 255);
 		text-align: center;
+		font-size:18px;
+		font-weight:500;
 	}
 	.info-card .info-card-details::-webkit-scrollbar {
 		width: 8px;
@@ -152,9 +154,9 @@ ul.nav.navbar-nav.navbar-right li a {
 	.info-card .info-card-details .info-card-header h3 {
 		color: rgb(62, 62, 62);
 		font-size: 22px;
-		font-weight: 900;
+		font-weight: 500;
 		text-transform: uppercase;
-		margin: 0 !important;
+		margin: 0 0 10 0 !important;
 		padding: 0 !important;
 	}
 	.info-card .info-card-details .info-card-header h3 {
@@ -220,7 +222,7 @@ ul.nav.navbar-nav.navbar-right li a {
 		background-color: rgb(1, 116, 179) !important;
 	}
 form#addProjectForm {
-    width: 500px;
-    margin-left: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
     margin-top: 80px;
 }
