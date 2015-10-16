@@ -26,16 +26,22 @@
 		    	<a id="filter" href="#">Mobile Computing</a> 
 		    	<a id="filter" href="#">Security</a> 
 		    	<a id="filter" href="#">Digital Workspace</a> 
-		    	<a id="filter" href="#">Modern Search</a> 
+		    	<a id="filter" href="#">Enterprise Search</a> 
+		    	<a id="filter" href="#">Process</a> 
+		    	<a id="filter" href="#">Marketing</a> 
+		    	<a id="filter" href="#">Infrastructure</a> 
+		    	<a id="filter" href="#">Development</a> 
+		    	<a id="filter" href="#">Testing</a> 
+		    	<a id="filter" href="#">Client Computing</a> 
 		    </div>
 		</div>
 
 
-	
+		
 	
 		<div class="row">
 			{{#each projects}}
-    		<div class="[ col-sm-6 col-md-4 ]">
+    		<div class="[ col-sm-4 col-md-3 ]">
 				<div class="[ info-card ]">
 					<img style="width: 100%" src="/img/sample_300.jpg" /> <!--src={{imgurl}}-->
 					<div class="[ info-card-details ] animate">
@@ -43,7 +49,7 @@
 							<!--<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>-->
 							<h1> <a href="{{exturl}}" target='_blank'> {{title}}</a> </h1>
 							<h3 class="tags"> {{epic}} </h3>
-							<h3> <span class="label"> Digital Workspace </span> </h3>
+							<!--	<h3> <span class="label"> Digital Workspace </span> </h3> -->
 						</div>
 						<div class="[ info-card-detail ]">
 							<!-- Description -->
@@ -54,8 +60,14 @@
  					</div>
 				</div>
 			</div>
+			{{else}}
+				<div class="container">
+		  			<h2> No projects in progress </h2>
+				</div>
 			{{/each}}
 		</div>
+		
+		
 	</div>
 </div>
 </div>

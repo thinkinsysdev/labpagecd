@@ -131,6 +131,7 @@ Router.map(function() {
 
   });
 
+  this.route('addEpic');
 
 
   // Users

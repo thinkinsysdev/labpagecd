@@ -7,7 +7,7 @@ Template.header.helpers({
   },
   isAdmin: function() {
     var currentUser = Meteor.user();
-    console.log(currentUser.roles);
+   // console.log(currentUser.roles);
     
     if (Roles.userIsInRole(currentUser, ['admin']))
     {

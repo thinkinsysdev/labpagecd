@@ -17,3 +17,7 @@ Meteor.publish('allProjects', function() {
 Meteor.publish('singleProject', function(id) {
   return Projects.find(id);
 });
+
+Meteor.publish('allEpics', function() {
+	return Epics.find();
+});
