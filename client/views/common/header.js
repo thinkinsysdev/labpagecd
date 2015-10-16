@@ -8,14 +8,12 @@ Template.header.helpers({
   isAdmin: function() {
     var currentUser = Meteor.user();
     console.log(currentUser.roles);
-    // Is this hackable?
-    if (null !== currentUser) {
-        if ('tmb' === currentUser.username) {
-            return true;
-        }
+    
+    if (Roles.userIsInRole(currentUser, ['admin']))
+    {
+        return true;
     }
-
-    }
+}
 })
 
 Template.header.events({

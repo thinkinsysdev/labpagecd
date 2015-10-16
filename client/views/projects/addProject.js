@@ -9,10 +9,9 @@ Template.addProject.helpers({
     isAdmin: function() {
     	var currentUser = Meteor.user();
     // Is this hackable?
-    if (null !== currentUser) {
-        if ('tmb' === currentUser.username) {
-            return true;
-        }
+     if (Roles.userIsInRole(currentUser, ['admin']))
+    {
+        return true;
     }
 
     }
