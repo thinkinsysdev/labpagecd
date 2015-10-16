@@ -15,7 +15,9 @@ a.submitidea {
 }
 
 blockquote {
-    color: white;
+    color: black;
+    background-color: #009ADF;
+    margin-top: 460px;
 }
 
 body {

@@ -165,8 +165,8 @@ header .social li:first-child{
 	display: block;
 	position: relative;
 	width: 100%;
-	height:760px;
-	background: url('../img/viewfinder-medium.jpg') no-repeat fixed center center;	
+	height:600px;
+	background: url('../img/photo-wicker.jpg') no-repeat fixed center center;	
 	background-size: cover;
 }
 
@@ -174,7 +174,7 @@ header .social li:first-child{
 	position: absolute;
 	max-width: 550px;
     margin-left: 0px;
-	top: 25%;
+	top: 30%;
 	transform:translate(0,-50%);
 	-webkit-transform:translate(0,-50%);
 	-moz-transform:translate(0,-50%);
@@ -323,7 +323,10 @@ a.app_link{
 }
 
 
-
+.about h1.text-uppercase {
+    padding-bottom: 60px;
+    text-align: center;
+}
 
 
 
