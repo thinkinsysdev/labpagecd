@@ -165,7 +165,7 @@ header .social li:first-child{
 	display: block;
 	position: relative;
 	width: 100%;
-	height:600px;
+	height:800px;
 	background: url('../img/photo-wicker.jpg') no-repeat fixed center center;	
 	background-size: cover;
 }
