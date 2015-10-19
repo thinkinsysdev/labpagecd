@@ -94,11 +94,12 @@ ul.nav.navbar-nav.navbar-right li a {
 	}
 	.info-card {
 		width: 100%;
-		border: 1px solid rgb(215, 215, 215);
+		border: 2px solid rgb(40, 40, 40);
 		position: relative;
 		font-family: 'Lato', sans-serif;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		overflow: hidden;
+		height:360px;
 	}
 	.info-card > img {
 		width: 100px;
