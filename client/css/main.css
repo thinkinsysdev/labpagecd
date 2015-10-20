@@ -32,7 +32,7 @@
 
 /*		General CSS		*/
 body{
-	background: #faf9f9;
+	background: #333333;
 	padding: 0px;
 	margin: 0px;
 }
@@ -172,9 +172,12 @@ header .social li:first-child{
 
 .hero .caption{
 	position: absolute;
-	max-width: 550px;
+	/*max-width: 550px;*/
+	width: 100%;
+	max-width:1140px;
     margin-left: 0px;
 	top: 30%;
+	padding-bottom:20px;
 	transform:translate(0,-50%);
 	-webkit-transform:translate(0,-50%);
 	-moz-transform:translate(0,-50%);
@@ -182,16 +185,20 @@ header .social li:first-child{
 }
 
 .hero .caption h1{
-	color: #000000;
-	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
-	font-size: 34px;
+	color: white;
+	font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+	font-size: 50px;
 	font-weight: bold;
 	word-break: break-word;
+	border: 10px solid;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+    height: 300px
 }
 
 .hero .caption p{
 	color: #000000;
-	font-family: "AvenirNextLTW01-Regular", Helvetica, Arial, sans-serif;
+	font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	margin: 15px 0 35px 0;
@@ -199,8 +206,8 @@ header .social li:first-child{
 
 
 .hero .caption .q{
-	color: #1E5AA0;
-	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	color: white;
+	font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 600;
@@ -215,14 +222,12 @@ a.app_store_btn{
 	display: inline-block;
 	text-decoration: none;
 	padding: 15px 40px;
-	border: 2px solid #FFFFFF;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
-	border-radius: 2px;
 	margin: 20px 20px 10px 0;
 
 	color: #FFFFFF;
-	font-family: "AvenirNextLTW01-BoldCnI 721320", Helvetica, Arial, sans-serif;
+	font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -368,7 +373,9 @@ a.app_link{
 /*		About section 		*/
 
 .about{
-	padding: 10px 0 60px 0;
+	padding: 60px 0 60px 0;
+	color:white;
+		background-color:#333333;
 }
 
 .about .iphone{
@@ -451,6 +458,7 @@ a.app_link{
 
 .about .features_list ul li span{
 	display: inline-block;
+	color:white;
 }
 
 
