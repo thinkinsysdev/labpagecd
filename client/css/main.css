@@ -227,7 +227,7 @@ a.app_store_btn{
 	margin: 20px 20px 10px 0;
 
 	color: #FFFFFF;
-	font-family: "Avenir Next LT W01 Demi", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNext LT W01 Demi", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -257,9 +257,12 @@ a.app_store_btn{
 
 a.app_store_btn:hover,
 a.app_store_btn:focus{
-	border-color: #333333;
-	color: #333333!important;
+	/*border-color: #333333;
+	color: #333333!important; */
+	background-color:rgb(102,194,236); border-color:#009ADF; color:white !important;
 }
+
+
 
 a.app_store_btn:hover .play_icon{
 	background: url('../img/play_hover.png') no-repeat;

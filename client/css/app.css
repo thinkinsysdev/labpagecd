@@ -91,7 +91,7 @@ strong {
 
 /* Styling for blog people page */
 .profileShort{ border-bottom:1px solid #ddd;
-	background-color: rgba(0,0,0,0.1);
+	/*background-color: rgba(0,0,0,0.1);*/
 	margin-top: 20px;
 	margin-bottom:20px;
 	padding-bottom: 20px;
@@ -157,10 +157,21 @@ a.emailButton {
 }
 
 .caption_desc.pull-left {
-    margin-top: 70px;
+    margin-top: 44px;
+
 }
 
 .quoteHero p {
     font-family: Avenir Next LT W01 Demi;
+    font-size:24px;
+}
+
+form#addProjectForm {
+	color:white;
+}
+
+legend {
+
+	color:white;
 }
 
