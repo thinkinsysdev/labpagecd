@@ -100,6 +100,7 @@ ul.nav.navbar-nav.navbar-right li a {
 		margin-bottom: 30px;
 		overflow: hidden;
 		height:360px;
+		background-color: white;
 	}
 	.info-card > img {
 		width: 100px;

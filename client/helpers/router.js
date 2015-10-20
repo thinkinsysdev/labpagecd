@@ -81,7 +81,7 @@ Router.map(function() {
 
         console.log('In the data function ' + this.params.epic);
       return {
-        projects: Projects.find()
+        projects: Projects.find({}, {sort: {title:1}})
       }
     }
   });
@@ -99,7 +99,7 @@ Router.map(function() {
         console.log('In the data function ' + this.params.epic);
         console.log(Projects.find( {epic : this.params.epic}).count());
       return {
-        projects: Projects.find( {epic : this.params.epic})
+        projects: Projects.find( {epic : this.params.epic}, {sort: {title: 1}})
       }
     }
   });

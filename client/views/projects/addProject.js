@@ -14,16 +14,18 @@ Template.addProject.helpers({
     console.log(arr);
     */
     return [
-      {label: "Security", value: "Security"},
-      {label: "Mobile Computing", value:  "Mobile Computing"},
+      {label: "Analytics", value: "Analytics"},
+      {label: "Client Computing", value: "Client Computing"},
+      {label: "Deployment", value: "Deployment"},
+      {label: "Development", value: "Development"},
       {label: "Digital Workspace", value: "Digital Workspace"},
       {label: "Enterprise Search", value: "Enterprise Search"},
-      {label: "Process", value: "Process"},
-      {label: "Marketing", value: "Marketing"},
       {label: "Infrastructure", value: "Infrastructure"},
-      {label: "Development", value: "Development"},
+      {label: "Marketing", value: "Marketing"},  
+      {label: "Mobile Computing", value:  "Mobile Computing"},
+      {label: "Process", value: "Process"},   
+      {label: "Security", value: "Security"},
       {label: "Testing", value: "Testing"},
-      {label: "Client Computing", value: "Client Computing"},
     ] 
     //return (Epics.find({}, {label:1, value:1, _id:0}))
     return (arr);
