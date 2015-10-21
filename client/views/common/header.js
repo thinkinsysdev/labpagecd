@@ -22,7 +22,7 @@ Template.header.events({
   },
   'click #submitidea': function () {
                 console.log('Clicked submit button');
-                alert('Show Dialog');
+                //alert('Show Dialog');
                 showCollectorDialog();
             }
   
@@ -36,7 +36,7 @@ Template.header.rendered = function () {
         "triggerFunction": function(showCollectorDialog) {
             jQuery("#submitidea").click(function(e) {
                 e.preventDefault();
-                console.log('Clicked the submit button');
+              //  console.log('Clicked the submit button');
                 showCollectorDialog();
             });
         }
