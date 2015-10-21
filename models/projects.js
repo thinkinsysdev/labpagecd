@@ -64,9 +64,9 @@ Projects.attachSchema(new SimpleSchema({
     label: "Approximate End of Project",
     optional: true
   },
-  projResult: {
+  labPhase: {
     type: String,
-    label: "Graduation State",
+    label: "Phase",
     optional: true
   },
   epic : {

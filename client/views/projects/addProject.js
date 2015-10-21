@@ -1,18 +1,5 @@
 Template.addProject.helpers({
 	EpicOptions: function() {
-    /*
-    var cursor = Epics.find({}, {label:1, value:1, _id:0});
-    var arr=[];
-    var i = 0;
-
-    cursor.forEach(function(epic) {
-      
-      arr[i] = {label: epic.label
-      i = i + 1;
-    });
-
-    console.log(arr);
-    */
     return [
       {label: "Analytics", value: "Analytics"},
       {label: "Client Computing", value: "Client Computing"},
@@ -27,9 +14,16 @@ Template.addProject.helpers({
       {label: "Security", value: "Security"},
       {label: "Testing", value: "Testing"},
     ] 
-    //return (Epics.find({}, {label:1, value:1, _id:0}))
-    return (arr);
 
+    },
+    PhaseOptions: function() {
+        return [
+        {label: "Idea", value:"Idea"},
+        {label: "Hypothesis", value:"Hypothesis"},
+        {label: "Experiment", value:"Experiment"},
+        {label: "Demo", value:"Demo"},
+        {label: "Graduate", value:"Graduate"}
+        ]
     },
     isAdmin: function() {
     	var currentUser = Meteor.user();
