@@ -229,16 +229,16 @@ i.fa {
 }
 
 .row {
-margin-top: 80px;
-    padding-top: 20px;
+	margin-top: 10px;
     padding-bottom: 20px;
 
 }
 
+/*
 .row img {
 	height: 100%;
 	width: 100%;
-}
+} */
 
 a.emailProf {
 	background-color: #009ADF;
