@@ -127,7 +127,7 @@ Router.map(function() {
 
   this.route('people', {
     path: '/people',
-    template: 'profiles'
+    template: 'people'
 
   });
 
