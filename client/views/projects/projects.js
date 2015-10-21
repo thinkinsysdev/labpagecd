@@ -27,7 +27,7 @@ Template.projects.helpers({
 							+ '<a class="btn"><i class="fa fa-graduation-cap"></i> </a>'
 						+' </div>';
 						break;
-	case "Experimentation": strReturn =  '<div class="stageIcons" style="width:100%; border-top:1px gray solid; padding-top:4px;">' 
+	case "Experiment": strReturn =  '<div class="stageIcons" style="width:100%; border-top:1px gray solid; padding-top:4px;">' 
 							+ '<a class="btn "><i class="fa fa-lightbulb-o"></i></a>'
 							+ ' <a class="btn"> <i class="fa fa-filter "></i> </a>'
 							+ '<a class="btn btn-success"><i class="fa fa-flask"></i> </a>'
