@@ -86,7 +86,7 @@ header .burger_icon{
 	text-transform: uppercase;
 
 	color: #43b779;
-	font-family: "AvenirNextLTW01-DemiCn", Helvetica, Arial, sans-serif;
+	font-family: "AvenirNext LT W01 Demi", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 
 	-moz-border-radius: 2px;
@@ -165,7 +165,7 @@ header .social li:first-child{
 	display: block;
 	position: relative;
 	width: 100%;
-	height:760px;
+	height:900px;
 	background: url('../img/photo-wicker.jpg') no-repeat fixed center center;	
 	background-size: cover;
 }
@@ -382,7 +382,7 @@ a.app_link{
 }
 
 .about .iphone{
-	max-width: 339px;
+	/*max-width: 339px;*/
 	position: relative;
 	display: inline-block;
 	text-align: center;
@@ -394,7 +394,7 @@ a.app_link{
 }
 
 .about .features_list{
-	margin-left: 50px;
+	margin-left: 150px;
 }
 
 .about .features_list h1{

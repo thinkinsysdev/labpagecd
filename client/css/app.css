@@ -17,7 +17,7 @@ a.submitidea {
 blockquote {
     color: black;
     background-color: white;
-    margin-top: 560px;
+    margin-top: 700px;
 }
 
 body {
@@ -81,6 +81,12 @@ a.app_link:focus{
 	color: #333333 !important;
 	border-color:#333333 !important;
 	
+}
+
+a.anav:hover, 
+a.anav:focus {
+	text-decoration: underline;
+	background-color:#009ADF !important;
 }
 
 
@@ -148,7 +154,7 @@ a.emailButton {
 .item{color:#48453d; margin-top:30px; overflow:hidden;}
 .block-title{color: #48453d; margin-bottom:0px; font-size:18px; margin-top: 0px; font-weight:500; text-transform:uppercase;}
 .item-content-block{padding-top:20px; padding-bottom:20px;  display:block;} /*border-top:2px solid #f6f6f2;*/
-.tags a{background-color:#009ADF; border:1px solid transparent;padding:10px; color:#fff; display:inline-block; font-size:12px; text-transform:uppercase; line-height:11px; border-radius:2px; margin-bottom:5px; margin-right:2px; text-decoration:none;}
+.tags a{background-color:#009ADF; border:1px solid transparent;padding:10px; color:#fff; display:inline-block; font-size:18px; text-transform:uppercase; line-height:11px; border-radius:2px; margin-bottom:5px; margin-right:2px; text-decoration:none;}
 .tags a:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 
 .pagecontainer {
@@ -175,3 +181,10 @@ legend {
 	color:white;
 }
 
+li {
+	padding-top: 5px;
+}
+
+i.fa {
+    padding-top: 10px;
+}
