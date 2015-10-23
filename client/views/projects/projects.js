@@ -71,10 +71,11 @@ Template.projects.helpers({
   },
   checkDefaultImage: function() {
   	if(this.imgUrl == 'default') {
-  		return this._id + '.jpg'
+  		strReturnImg = '<img style="width: 100%" src=/img/projects/' + this._id + '.jpg>';
   	}
-  	else return this.imgUrl;
+  	else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'
 
+  	return strReturnImg;
 
   }
 
