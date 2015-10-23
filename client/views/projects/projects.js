@@ -6,9 +6,7 @@ Template.projects.created = function () {
 Template.projects.helpers({
   //
   convertPhasetoIcon: function(strPhase) {
-  	console.log('This conversion was succcessful ' + strPhase)
   	
-
   	switch(strPhase) {
  	
  	case "Idea": strReturn =  '<div class="stageIcons" style="width:100%; border-top:1px gray solid; padding-top:4px;">' 
@@ -70,8 +68,10 @@ Template.projects.helpers({
 
   },
   checkDefaultImage: function() {
-  	if(this.imgUrl == 'default') {
+  	if(this.imgurl == 'default') {
+
   		strReturnImg = '<img style="width: 100%" src=/img/projects/' + this._id + '.jpg>';
+  		//console.log(strReturnImg);
   	}
   	else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'
 

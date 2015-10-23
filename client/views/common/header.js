@@ -21,7 +21,7 @@ Template.header.events({
     Meteor.logout();
   },
   'click #submitidea': function () {
-                console.log('Clicked submit button');
+               // console.log('Clicked submit button');
                 //alert('Show Dialog');
                 showCollectorDialog();
             }
@@ -30,7 +30,7 @@ Template.header.events({
 })
 
 Template.header.rendered = function () {
-    console.log('In the header rendered function');
+    //console.log('In the header rendered function');
 
     window.ATL_JQ_PAGE_PROPS = {
         "triggerFunction": function(showCollectorDialog) {
