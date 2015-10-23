@@ -1,0 +1,73 @@
+<template name="projectSearch">
+<div class="container">
+
+<div class="pagecontainer">
+<div class="search pull-right" style="width:100%;">
+<div class="searchText" style="width:50%;">
+Search: 
+</div>
+{{> EasySearch.Input index=projectsIndex}}
+</div>
+
+<div class="projectPortfolio">
+
+
+
+	<!-- <div class="item">
+		
+		    <div class="item-content-block tags">
+		    	<a id="allfilter" href={{pathFor 'projects'}}>All</a>
+		    	<a id="filter" href="#">Analytics</a> 
+		    	<a id="filter" href="#">Client Computing</a>  
+		    	<a id="filter" href="#">Deployment</a>    
+		    	<a id="filter" href="#">Development</a> 
+	    		<a id="filter" href="#">Digital Workspace</a> 
+		    	<a id="filter" href="#">Enterprise Search</a> 
+		    	<a id="filter" href="#">Infrastructure</a> 
+		    	<a id="filter" href="#">Marketing</a> 
+		    	<a id="filter" href="#">Mobile Computing</a> 
+		    	<a id="filter" href="#">Process</a> 
+		    	<a id="filter" href="#">Security</a> 
+		    	<a id="filter" href="#">Testing</a> 
+		    </div>
+		</div>
+		-->
+
+
+<div class="row">
+			{{#EasySearch.Each index=projectsIndex}}
+    		<div class="[ col-sm-4 col-md-3 ]">
+				<div class="[ info-card ]">
+					<img style="width: 100%" src={{imgurl}} > <!--src="/img/sample_300.jpg" /> -->
+					<div class="[ info-card-details ] animate">
+						<div class="[ info-card-header ]">
+							<!--<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>-->
+							<!--<h1> <a href="{{exturl}}" target='_blank'> {{title}}</a> </h1>-->
+
+							<h1> {{title}} </h1>
+							<h3 class="tags"> {{epic}} </h3>
+							{{{convertPhasetoIcon labPhase}}}
+							<!--	<h3> <span class="label"> Digital Workspace </span> </h3> -->
+						</div>
+						<div class="[ info-card-detail ]">
+							<!-- Description -->
+							<p>{{summary}}</p>
+
+						</div>
+						
+ 					</div>
+				</div>
+			</div>
+			{{/EasySearch.Each}}
+
+		{{#EasySearch.IfNoResults index=projectsIndex}}
+		    <div class="container"> No results found!</div>
+		  {{/EasySearch.IfNoResults}}
+	
+</div>
+		  		
+</div>
+</div>
+</div> 
+
+</template>

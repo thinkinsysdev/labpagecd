@@ -19,10 +19,11 @@ Template.addProject.helpers({
     PhaseOptions: function() {
         return [
         {label: "Idea", value:"Idea"},
-        {label: "Hypothesis", value:"Hypothesis"},
+        //{label: "Hypothesis", value:"Hypothesis"},
         {label: "Experiment", value:"Experiment"},
-        {label: "Demo", value:"Demo"},
-        {label: "Graduate", value:"Graduate"}
+        //{label: "Demo", value:"Demo"},
+        {label: "Graduate", value:"Graduate"},
+        {label: "Archive", value: "Archive"}
         ]
     },
     isAdmin: function() {
