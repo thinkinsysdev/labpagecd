@@ -121,7 +121,7 @@ ul.nav.navbar-nav.navbar-right li a {
 		font-weight:500;
 	}
 	.info-card .info-card-details::-webkit-scrollbar {
-		width: 8px;
+		width: 5px;
 	}
 	.info-card .info-card-details::-webkit-scrollbar-button {
 		width: 8px;
@@ -150,7 +150,7 @@ ul.nav.navbar-nav.navbar-right li a {
 	.info-card:hover .info-card-details .info-card-header {
 		position: relative;
 		bottom: 0px;
-		padding-top: 45px;
+		padding-top: 5px;
 		padding-bottom: 25px;
 	}
 	.info-card .info-card-details .info-card-header h1,	
