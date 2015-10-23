@@ -2,18 +2,12 @@ Template.addProject.helpers({
 	EpicOptions: function() {
     return [
       {label: "Analytics", value: "Analytics"},
-      {label: "Client Computing", value: "Client Computing"},
-      {label: "Deployment", value: "Deployment"},
-      {label: "Development", value: "Development"},
+      {label: "Business Platform", value: "Business Platform"},
       {label: "Digital Workspace", value: "Digital Workspace"},
-      {label: "Enterprise Search", value: "Enterprise Search"},
       {label: "Infrastructure", value: "Infrastructure"},
-      {label: "Marketing", value: "Marketing"},  
-      {label: "Mobile Computing", value:  "Mobile Computing"},
-      {label: "Process", value: "Process"},   
+      {label: "Modern Apps", value:  "Modern Apps"},
       {label: "Security", value: "Security"},
-      {label: "Testing", value: "Testing"},
-    ] 
+     ] 
 
     },
     PhaseOptions: function() {

@@ -27,12 +27,14 @@ Projects.attachSchema(new SimpleSchema({
   imgurl: {
     type: String,
     label: "Link to featured image",
-    optional: true
+    optional: true,
+    defaultValue: 'default'
+
   },
   exturl: {
     type: String,
     label: "Link to Confluence/Sharepoint",
-    optional: false
+    optional: true
   },
   labcontactname: {
     type: String,
