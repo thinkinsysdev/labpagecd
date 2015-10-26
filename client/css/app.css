@@ -340,3 +340,6 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 	height: auto;
 }
 
+.navbar-brand {
+	padding-top:10px;
+}
