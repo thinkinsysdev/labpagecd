@@ -258,7 +258,9 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 	margin-top:100px;
 }
 
-.video-list-thumbs{}
+.video-list-thumbs{
+	padding-top:20px;
+}
 .video-list-thumbs > li{
     margin-bottom:12px;
 }
@@ -266,8 +268,9 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 .video-list-thumbs > li > a{
 	display:block;
 	position:relative;
-	background-color: #111;
-	color: #fff;
+	/*background-color: #111;*/
+	background-color: white;
+	color: #000;
 	padding: 8px;
 	border-radius:3px
     transition:all 500ms ease-in-out;
@@ -279,8 +282,10 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 }
 .video-list-thumbs h2{
 	bottom: 0;
-	font-size: 14px;
-	height: 33px;
+	/*font-size: px;*/
+	/*height: 33px; */
+	color: black;
+	padding-top: 15px;
 	margin: 8px 0 0;
 }
 .video-list-thumbs .glyphicon-play-circle{
@@ -342,4 +347,24 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 
 .navbar-brand {
 	padding-top:10px;
+}
+
+.videoitem {
+	background-color: white;
+	border-radius: 8px;
+	margin: 10px;
+	max-width: 250px;
+	min-height:340px;
+}
+
+.video-list-thumbs > li > a > img.img-responsive {
+    min-height: 200px;
+}
+
+.modal-footer {
+ text-align:left !important;
+}
+
+.notfound {
+	color:white;
 }
