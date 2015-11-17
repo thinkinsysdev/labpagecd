@@ -381,6 +381,12 @@ a.app_link{
 		background-color:#333333;
 }
 
+.aboutPage{
+	padding: 0px 0 60px 0;
+	color:white;
+		background-color:#333333;
+}
+
 .about .iphone{
 	/*max-width: 339px;*/
 	position: relative;

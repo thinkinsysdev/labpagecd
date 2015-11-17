@@ -368,3 +368,18 @@ a.emailProf:hover{background-color:rgb(102,194,236); border-color:#009ADF;}
 .notfound {
 	color:white;
 }
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    color:black;
+}
+
+.jumbotron>ul>li {
+    font-size: 16px;
+}
+
+.aboutPage>.row>img {
+	padding-left:47%;
+}
