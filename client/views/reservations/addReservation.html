@@ -1,0 +1,22 @@
+<template name="addReservation">
+<div class="container">
+  <div class="pagecontainer">
+
+   <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
+   {{#autoForm collection="Reservations" id="addReservationForm" type="method" meteormethod="reserveSpace"}}
+   <fieldset>
+   	<legend> Request for Lab Space </legend>
+   	{{> afQuickField name='title'}}
+   	{{> afQuickField name='summary' rows = 3}}
+    {{> afQuickField name='contactname'}}
+     {{> afQuickField name='reqBegin'}}
+      {{> afQuickField name='reqEnd'}}
+    <!--  {{> afQuickField name='requestSpace'}} -->
+	 {{> afQuickField name='services' options=ServiceOptions}}
+
+   </fieldset>
+   <button type="submit" class="btn btn-primary"> Submit </button>
+   {{/autoForm}}
+ </div>
+  </div>
+</template>

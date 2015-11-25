@@ -40,3 +40,10 @@ davidsichau:sidebar
 easy:search
 meteorhacks:inject-initial
 email
+khamoud:slack-api
+momentjs:moment
+http
+mrt:moment-timezone
+aldeed:autoform-bs-datetimepicker
+tsega:bootstrap3-datetimepicker@=3.1.3_3
+mrt:flash-messages
