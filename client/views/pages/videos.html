@@ -1,69 +1,36 @@
-<!-- <template name="videos">
-<div class="container">
-
-<div class="pagecontainer">
-<div class="videosPage">
-	<div class="row">
-	<div class="col-md-10">
-
-		<iframe width="1214" height="760" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/tJz6ZuETx2U?embed=true&amp;width=800&amp;height=600"></iframe>
-
-	</div>
-
-	</div>
-</div>
-</div>
-</div>
-</template> -->
-
 <template name="videos">
-
 	<div class="container">
-
 		<div class="pagecontainer">
+			<ul class="list-unstyled video-list-thumbs row">
+				<li class="videoitem col-md-3 col-sm-4 col-xs-6">
+					<a href="" id="DelphixModalLink" title="Emerging Data Copy Management Solution">
+						
+						<img src="/img/projects/database_virtualization_vid.jpg" alt="Delphix" class="img-responsive" />
+						<!-- <h2>Emerging Data Copy Management Solution enables self service access for developers and testers.</h2> -->
+						<h2> Emerging Data Copy Solution </h2>
+						<span class="glyphicon glyphicon-play-circle"></span>
+						<span class="duration"></span>
+					</a>
+				</li> 
+				
+				<li class="videoitem col-md-3 col-sm-4 col-xs-6">
+					<a href="" id="LabRebuildModalLink" title="Lab space remodel for better collaboration.">
+						<img src="/img/projects/plans.jpg" alt="LabRemodel" class="img-responsive"  />
+						<h2>Recent Lab Remodel </h2>
+						<span class="glyphicon glyphicon-play-circle"></span>
+						<span class="duration"></span>
+					</a>
+				</li> 
 
-
-		<ul class="list-unstyled video-list-thumbs row">
-
-	<!--<li class="col-lg-12 col-sm-12 col-xs-12">
-
-		<a href="" id="AppianModalLink" title="Appian Workflow tool changes the way corporate action processes events.">
-			<img src="/img/projects/bpm_workflow.png" alt="Appian BPM" class="img-responsive" height="400px" />
-			<h2>Appian Workflow tool changes the way corporate action processes events.</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration"></span>
-		</a>
-	</li> 
-	<li class="col-lg-12 col-sm-12 col-xs-12">
-
-		<a href="" id="CEPModalLink" title="Complex Events Processing and Correlation">
-			<img src="/img/projects/trading_dashboard_vid.jpg" alt="Trading Dashboard" class="img-responsive" height="400px" />
-			<h2>Event correlation technologies to enable trading and market activities dashboards</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration"></span>
-		</a>
-	</li>  -->
-
-	
-	<li class="videoitem col-md-3 col-sm-4 col-xs-6">
-		<a href="" id="DelphixModalLink" title="Emerging Data Copy Management Solution">
-			
-			<img src="/img/projects/database_virtualization_vid.jpg" alt="Delphix" class="img-responsive" />
-			<!-- <h2>Emerging Data Copy Management Solution enables self service access for developers and testers.</h2> -->
-			<h2> Emerging Data Copy Solution </h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration"></span>
-		</a>
-	</li> 
-	
-	<li class="videoitem col-md-3 col-sm-4 col-xs-6">
-		<a href="" id="LabRebuildModalLink" title="Lab space remodel for better collaboration.">
-			<img src="/img/projects/plans.jpg" alt="LabRemodel" class="img-responsive"  />
-			<h2>Recent Lab Remodel </h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration"></span>
-		</a>
-	</li> 
+				<li class="videoitem col-md-3 col-sm-4 col-xs-6">
+					<a href="" id="CEPModalLink" title="Market Dashboard">
+						<img src="/img/projects/tradingdashboard.gif" alt="CEP" class="img-responsive" />
+						<!-- <h2>Emerging Data Copy Management Solution enables self service access for developers and testers.</h2> -->
+						<h2> Market Dashboard</h2>
+						<span class="glyphicon glyphicon-play-circle"></span>
+						<span class="duration"></span>
+					</a>
+				</li> 
 	<!--
 	<li class="videoitem col-md-3 col-sm-4 col-xs-6">
 
@@ -86,7 +53,7 @@
 	</li>
 	-->
 	</ul>
-	<!-- Appian Modal Begin -->
+	<!-- Appian Modal Begin 
 			<div class="modal fade container" id="AppianModal">
    				 <div class="modal-dialog modal-sm">
       			<div class="modal-content">
@@ -107,7 +74,7 @@
 
      			 </div>
   		  </div>
- 		 </div>
+ 		 </div> -->
  		 <!-- Appian Modal Done -->
 <!--- CEP modal -->
 
@@ -116,13 +83,13 @@
       			<div class="modal-content">
 
 		        <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		          <h4 class="modal-title">Real Time Events Processing and Correlation</h4>
+		        <button type="button" id="closeCEPModal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		          <h4 class="modal-title">Market Dashboard: Real Time Events Processing and Correlation</h4>
 		        </div>
 
 		        <div class="modal-body">
 
-		        <iframe width="100%" height="600px" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/tJz6ZuETx2U?embed=true&amp;width=800&amp;height=600"></iframe>
+		        <iframe width="100%" height="600px" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/cep?embed=true&width=800&height=600"></iframe>
 
 		        </div>
 
@@ -142,13 +109,13 @@
       			<div class="modal-content">
 
 		        <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <button type="button" id="closeDelphixModal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		          <h4 class="modal-title">Emerging Data Copy Solution - Delphix PoC</h4>
 		        </div>
 
 		        <div class="modal-body">
 
-		        <iframe width="100%" height="400px" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/doxVIqYRosG?embed=true&amp;width=600&amp;height=400"></iframe>
+		        <iframe width="100%" height="600px" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/doxVIqYRosG?embed=true&amp;width=800&amp;height=600"></iframe>
 
 		        </div>
 
@@ -170,7 +137,7 @@
       			<div class="modal-content">
 
 		        <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <button type="button" id="closeLabRebuildModal" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		          <h4 class="modal-title">Lab Remodel - built for more collaboration and ideation.</h4>
 		        </div>
 
@@ -189,7 +156,7 @@
 
  		 <!-- Lab Remodel Modal Done -->
 
-<!--- Dev-E modal -->
+<!--- Dev-E modal 
 
 	<div class="modal fade container" id="DevEnablementModal">
    				 <div class="modal-dialog modal-sm">
@@ -211,98 +178,14 @@
 
      			 </div>
   		  </div>
- 		 </div>
+ 		 </div> -->
 
  		 <!-- Dev-E Modal Done -->
 
 
-<!--
-		<div class="modal fade container" id="videosModalCEP">
-   				 <div class="modal-dialog modal-sm">
-      			<div class="modal-content">
 
-		        <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		          <h4 class="modal-title">Complex Events Correlation</h4>
-		        </div>
-
-		        <div class="modal-body">
-
-		        <iframe width="100%" height="600px" frameborder="0" src="http://thecapitalgroup.qumucloud.com/view/tJz6ZuETx2U?embed=true&amp;width=800&amp;height=600"></iframe>
-
-		        </div>
-
-		        <div class="modal-footer">
-		        </div>
-
-     			 </div>
-  		  </div>
- 		 </div>
-		</div>
--->
 	</div>
 	</div>
 
 </template>
 
-
-<!--
-
-<template name="videos">
-<div class="container">
-<div class="pagecontainer">
-
-<div class="container">
-
-<ul class="list-unstyled video-list-thumbs row">
-
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-
-		<a href="http://thecapitalgroup.qumucloud.com/view/tJz6ZuETx2U?embed=true" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration">03:15</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration">03:15</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration">03:15</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration">03:15</span>
-		</a>
-	</li>
-    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-			<span class="glyphicon glyphicon-play-circle"></span>
-			<span class="duration">03:15</span>
-		</a>
-	</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</template> -->
