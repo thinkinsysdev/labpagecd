@@ -1,9 +1,9 @@
 <template name="addReservation">
 <div class="container">
   <div class="pagecontainer">
-
+   {{> flashMessages}}
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
-   {{#autoForm collection="Reservations" id="addReservationForm" type="method" meteormethod="reserveSpace"}}
+   {{#autoForm collection="Reservations" id="addReservationForm" type="method" meteormethod="xreserveSpace"}}
    <fieldset>
    	<legend> Request for Lab Space </legend>
    	{{> afQuickField name='title'}}
@@ -11,8 +11,8 @@
     {{> afQuickField name='contactname'}}
      {{> afQuickField name='reqBegin'}}
       {{> afQuickField name='reqEnd'}}
-    <!--  {{> afQuickField name='requestSpace'}} -->
-	 {{> afQuickField name='services' options=ServiceOptions}}
+     {{> afQuickField name='requestSpace'}} 
+	   {{> afQuickField name='services'}}
 
    </fieldset>
    <button type="submit" class="btn btn-primary"> Submit </button>

@@ -4,17 +4,19 @@ Reservations.attachSchema(new SimpleSchema({
   title: {
     type: String,
     label: "Title",
-    max: 200
+    max: 200,
+    optional: false
   },
   summary: {
     type: String,
     label: "Summary",
-    max: 1000
+    max: 1000,
+    optional: true
   },
   contactname: {
     type: String,
     label: "Requested By (Initials)",
-    optional: true
+    optional: false
   },
   reqBegin : {
     type: "Date",
@@ -25,7 +27,7 @@ Reservations.attachSchema(new SimpleSchema({
         timezoneId: "America/Los_Angeles"
       }
     },
-    optional: true
+    optional: false
   },
   reqEnd: {
     type: "Date",
@@ -36,14 +38,15 @@ Reservations.attachSchema(new SimpleSchema({
         timezoneId: "America/Los_Angeles"
       }
     },
-    optional: true
+    optional: false
   },
   
   requestSpace: {
     type: String,
     optional: true,
     autoform: {
-      type: "select-checkbox-inline",
+      type: "select-radio-inline",
+      group: "reqSpace",
       options: function () {
         return [
           {label: "Newton Lounge", value: "Newton Lounge"},
@@ -59,9 +62,32 @@ Reservations.attachSchema(new SimpleSchema({
     optional: true
   },
   services : {
-    type: String,
-    label : "Services",
-    optional: true
+    type: [String],
+    //label : "Services",
+    optional: true,
+    //allowedValues:  ["Breakfast", "Refreshments", "Lunch", "Technology Support", "Video Conference"],
+    /*options: function() {
+    return [
+      {label: "Breakfast", value: "Breakfast"},
+      {label: "Lunch", value: "Lunch"},
+      {label: "Cookies/Drinks", value: "Cookies/Drinks"},
+      {label: "Technology Support", value: "Technology Support"},
+       {label: "Video Conference", value: "Video Conference"},
+     ] 
+    },*/
+    autoform: {
+      group: 'reqservices',
+      type: "select-checkbox-inline",
+      options: function() {
+    return [
+      {label: "Breakfast", value: "Breakfast"},
+      {label: "Lunch", value: "Lunch"},
+      {label: "Cookies/Drinks", value: "Cookies/Drinks"},
+      {label: "Technology Support", value: "Technology Support"},
+       {label: "Video Conference", value: "Video Conference"},
+     ] 
+    }
+    }
   }
 
   

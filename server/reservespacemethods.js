@@ -22,6 +22,10 @@ Meteor.methods({
             if (!error) {
               console.log(result.statusCode + ": " + result.content);
             }
+            else {
+            	Session.set("httpError", "HTTP Call failed: " + result.statusCode); 
+
+            }
           });
 
 
