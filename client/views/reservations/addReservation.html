@@ -3,7 +3,7 @@
   <div class="pagecontainer">
    {{> flashMessages}}
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
-   {{#autoForm collection="Reservations" id="addReservationForm" type="method" meteormethod="reserveSpace"}}
+   {{#autoForm collection="Reservations" id="addReservationForm" type="method" meteormethod="reserveSpaceSlack"}}
    <fieldset>
    	<legend> Request for Lab Space </legend>
    	{{> afQuickField name='title'}}
