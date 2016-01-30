@@ -69,13 +69,46 @@ Projects.attachSchema(new SimpleSchema({
   labPhase: {
     type: String,
     label: "Phase",
-    optional: true
+    optional: true, 
+    autoform: {
+      group: 'labphase',
+      type: 'select-radio-inline',
+    options: function() {
+      return [
+      {label: "Idea", value:"Idea"},
+        //{label: "Hypothesis", value:"Hypothesis"},
+        {label: "Experiment", value:"Experiment"},
+        //{label: "Demo", value:"Demo"},
+        {label: "Graduate", value:"Graduate"},
+        {label: "Archive", value: "Archive"}
+
+      ]
+    }
+  }
   },
-  epic : {
+ /* epic : {
     type: String,
     label : "Project Category",
     optional: true
-  }
+  }, */
+  epics : {
+    type: [String],
+    optional: true,
+    autoform: {
+      group: 'epics',
+      type: "select-checkbox-inline",
+   /*   options: function() {
+    return [
+      {label: "Digital Workspace", value: "Digital Workspace"},
+      {label: "Hybrid Cloud", value: "Hybrid Cloud"},
+      {label: "Holistic Security", value: "Holistic Security"},
+      {label: "Application Enablement", value: "Application Enablement"},
+       {label: "Video Conference", value: "Video Conference"},
+     ] 
+    } */
+    }
+  } 
+ // epics: 
 
   
 }));

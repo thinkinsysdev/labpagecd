@@ -4,6 +4,10 @@ Template.projects.created = function () {
 };
 
 Template.projects.helpers({
+
+  EpicsList: function (){
+  	return Epics.find({}, {sort: {label:1}});
+  },
   //
   convertPhasetoIcon: function(strPhase) {
   	

@@ -54,4 +54,22 @@ _.each(users, function (user) {
 
 });
 
+//var epicex = Epics.find({}, {"label":1, "value":1, _id:0});
+var epicscount = Epics.find({}, {"label":1, "value":1, _id:0}).count();
+
+/*if (epicscount > 0) {
+_.each(epicex, function(epic) {
+  console.log(epic["label"]);
+  console.log(epic["value"]);
+
+})
+}
+else console.log(epicscount); */
+
+console.log(epicscount);
+
+
+
+
+
 //console.log(houston_admins.find().count() + 'admins created');

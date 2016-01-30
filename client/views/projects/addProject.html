@@ -2,6 +2,7 @@
 {{#if isAdmin}}
 <div class="container">
   <div class="pagecontainer">
+   {{> flashMessages}}
 
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
    {{#autoForm collection="Projects" id="addProjectForm" type="insert"}}
@@ -11,8 +12,12 @@
    	{{> afQuickField name='summary' rows = 3}}
 	{{> afQuickField name='imgurl' }}
    {{> afQuickField name='exturl'}}
-	{{> afQuickField name='epic' options=EpicOptions}}
-{{> afQuickField name='labPhase' options=PhaseOptions}}
+   {{> afQuickField name='epics' options=EpicList}}
+   {{> afQuickField name='labPhase'}} 
+
+
+<!--	{{> afQuickField name='epic' options=EpicOptions}}
+{{> afQuickField name='labPhase' options=PhaseOptions}} -->
    </fieldset>
    <button type="submit" class="btn btn-primary"> Insert </button>
    {{/autoForm}}
