@@ -1,11 +1,11 @@
 Meteor.methods({
   requestSpace: function(eventtitle, eventdate, eventdesc){
-	  	console.log('Request Received: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  
+	  	//console.log('Request Received: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  
 	  	HTTP.call("POST", "https://maker.ifttt.com/trigger/ReserveSpace/with/key/dqu3p0dyh430dN0yJ54z1p",
           {data: {value1: eventtitle, value2: eventdate, value3: eventdesc}},
           function (error, result) {
             if (!error) {
-              console.log(result.statusCode + ": " + result.content);
+              //console.log(result.statusCode + ": " + result.content);
             }
           });
 
@@ -14,14 +14,14 @@ Meteor.methods({
   	//check(doc, Schema.reservations)
   	msg = " \n" + "Requested: \n" + "From: " + doc.reqBegin + ' To: ' + doc.reqEnd + '\n Services Requested: ' + doc.services + 
   	"\n Space Requested " + doc.requestSpace;
-  	console.log('In the reserveSpace function');
-  	  	console.log(doc.title);
+  	//console.log('In the reserveSpace function');
+  	  	//console.log(doc.title);
   	  	HTTP.call("POST", "https://maker.ifttt.com/trigger/ReserveSpace/with/key/dqu3p0dyh430dN0yJ54z1p",
         //HTTP.call("POST", "https://hooks.slack.com/services/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",
           {data: {value1: doc.title, value2: doc.contactname, value3: msg}},
           function (error, result) {
             if (!error) {
-              console.log(result.statusCode + ": " + result.content);
+              //console.log(result.statusCode + ": " + result.content);
             }
             else {
             	Session.set("httpError", "HTTP Call failed: " + result.statusCode); 
@@ -58,17 +58,17 @@ Meteor.methods({
 
 
 /*
-    console.log('In the reserveSpaceSlack function');
-        console.log(doc.title);
+    //console.log('In the reserveSpaceSlack function');
+        //console.log(doc.title);
         //HTTP.call("POST", "https://maker.ifttt.com/trigger/ReserveSpace/with/key/dqu3p0dyh430dN0yJ54z1p",
         HTTP.call("POST", "https://hooks.slack.com/services/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",
           {payload: {message} },
           function (error, result) {
             if (!error) {
-              console.log(result.statusCode + ": " + result.content);
+              //console.log(result.statusCode + ": " + result.content);
             }
             else {
-              console.log("httpError", "HTTP Call failed: " + result.statusCode); 
+              //console.log("httpError", "HTTP Call failed: " + result.statusCode); 
 
             }
           });
@@ -91,7 +91,7 @@ this.unblock();
 	 	} 
 	 	catch (e)
 	 	{
-	 		console.log('Request failed: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  
+	 		//console.log('Request failed: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  
 	 		return false;
 	 	}
 	 	*/

@@ -20,7 +20,7 @@ AutoForm.addHooks(['addReservationForm'], {
 
 AutoForm.addHooks(['addReservationForm'], {
 onError : function(operation, result, template) {
-    console.log('Error triggered');
+    //console.log('Error triggered');
     FlashMessages.sendError('Your request cannot be completed. Please contact PRRH/TMB (x51643).');
     Router.go("/addReservation");
   }
