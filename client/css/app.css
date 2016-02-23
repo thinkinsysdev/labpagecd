@@ -387,3 +387,27 @@ background: white;
 .aboutPage>.row>img {
 	padding-left:47%;
 }
+
+.idea {
+	color:white;
+}
+.errorLogin {
+	color:white;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.adminPage {
+	color:white;
+}
+.btnAdmin {
+	background-color: white;
+}
+.ideaPage {
+	color:white;
+}
+.ideaPageTitle {
+	padding-top: 20px;
+}
+.btnIdea {
+	background-color: white;
+}

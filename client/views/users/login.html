@@ -1,12 +1,28 @@
 <template name="login">
 <div class="container">
   <div class="pagecontainer">
-	{{> loginButtons}}
+	<!--{{> loginButtons}} -->
+	{{> flashMessages}}
 
-	{{#if isAdmin}}
-		{{> appDumpUI}}
-	{{/if}}
+	{{#if currentUser}}
+
+	{{> adminPage}}
+
+	{{else}}
+	<!--<div class="errorLogin"> -->
+	<form id="loginForm" action="action">
+      <div>
+        <input type="text" id="loginUserName" />
+        <input type="password" id="loginPassword" />
+        <input type="submit" id="loginButton" value="Sign in" />
+     </div>
+   </form> 
+   <!-- </div> -->
+
+   {{/if}}
+
+	
+	</div>
 	</div>
 
-	</div>
 </template>

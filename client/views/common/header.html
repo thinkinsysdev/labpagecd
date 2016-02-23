@@ -33,15 +33,14 @@
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right anav">
                         <li><a class="anav" href="{{pathFor 'overview'}}">Overview</a></li>
+                        
                         <li><a class="anav" href="{{pathFor 'people'}}">People</a></li>
                         <li><a class="anav" href="{{pathFor 'projects'}}">Projects</a></li>
                          <li><a class="anav" href="{{pathFor 'videos'}}">Videos</a></li>
                        
-                         <li><a class="anav" id="submitIdea" href="{{pathFor 'submitIdea'}}">Submit Idea</a></li>
+                         <li><a class="anav" id="submitIdea" href="{{pathFor 'ideas'}}">Idea</a></li>
                           <li><a class="anav" id="reserveSpace" href="{{pathFor 'addReservation'}}">Reserve </a></li>
-                        {{#if isAdmin}}
-                        <li><a class="anav" href="{{pathFor 'addProject'}}">Add Project</a></li>
-                        {{/if}}
+                    
                     </ul>
                 </div><!-- /.nav-collapse -->
             </div><!-- /.container -->
