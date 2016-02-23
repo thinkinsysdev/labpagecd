@@ -1,0 +1,24 @@
+<template name="submitIdea">
+<div class="container">
+  <div class="pagecontainer">
+   {{> flashMessages}}
+
+   <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
+   {{#autoForm collection="Ideas" id="submitIdeaForm" type="insert"}}
+   <fieldset>
+   	<legend> Submit an Idea </legend>
+   	{{> afQuickField name='title'}}
+   	{{> afQuickField name='description' rows = 3}}
+	 {{> afQuickField name='exturl'}}
+   {{> afQuickField name='epics' options=EpicList}}
+   
+
+<!--	{{> afQuickField name='epic' options=EpicOptions}}
+{{> afQuickField name='labPhase' options=PhaseOptions}} -->
+   </fieldset>
+   <button type="submit" class="btn btn-primary"> Insert </button>
+   {{/autoForm}}
+ </div>
+</div>
+
+</template>

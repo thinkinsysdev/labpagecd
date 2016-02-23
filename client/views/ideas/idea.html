@@ -1,0 +1,10 @@
+<template name="idea">
+  <a href="{{pathFor 'ideas'}}">← Back</a>
+  {{#with idea}}
+    <div class="project">
+      <h3>{{title}}</h3>
+      <p>{{description}}</p>
+      <h5><a href="#" class="delete">Delete</a></h5>
+    </div>
+  {{/with}}
+</template>

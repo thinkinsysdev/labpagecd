@@ -1,0 +1,46 @@
+
+<template name="ideas">
+<div class="container">
+  <div class="pagecontainer">
+   {{> flashMessages}}
+
+<!--
+<div class="search pull-right" style="width:100%;">
+<div class="searchText" style="width:50%;">
+Search: 
+</div>
+{{> EasySearch.Input index=projectsIndex}}
+</div> -->
+<div class="projectPortfolio">
+		
+<!--	<div class="item">
+		    <div class="item-content-block tags">
+		    	<a id="allfilter" href={{pathFor 'projects'}}>All</a>
+		    
+		    	{{#each EpicsList}}
+		    	
+		    	<a id="filter" href="#">{{label}}</a>
+		    	{{/each}}
+		    </div>
+		</div> -->
+		
+	
+		<div class="row">
+			{{#each ideas}}
+			 <div class="idea">
+			 	<h2> {{title}} </h2>
+			 	<span> {{description}} </span>
+			 	<br />
+			 </div>
+			{{else}}
+				<div class="container">
+		  			<h2> No ideas in progress </h2>
+				</div>
+			{{/each}}
+		</div>
+		
+		
+	</div>
+</div>
+</div>
+</template>

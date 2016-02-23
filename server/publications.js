@@ -21,3 +21,11 @@ Meteor.publish('singleProject', function(id) {
 Meteor.publish('allEpics', function() {
 	return Epics.find();
 });
+
+Meteor.publish('allIdeas', function() {
+	return Ideas.find();
+})
+
+Meteor.publish('singleIdea', function() {
+	return Ideas.find(id);
+})

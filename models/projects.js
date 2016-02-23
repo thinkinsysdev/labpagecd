@@ -1,8 +1,8 @@
 /* ---------------------------------------------------- +/
 
-## Items ##
+## Projects ##
 
-All code related to the Items collection goes here. 
+All code related to the Projects collection goes here. 
 
 /+ ---------------------------------------------------- */
 
@@ -152,7 +152,7 @@ Meteor.methods({
   },
   removeProject: function(project){
     if(can.removeProject(Meteor.user(), project)){
-      Projects.remove(item._id);
+      Projects.remove(project._id);
     }else{
       throw new Meteor.Error(403, 'You do not have the rights to delete this item.')
     }

@@ -19,13 +19,13 @@ Template.header.helpers({
 Template.header.events({
   'click .log-out': function () {
     Meteor.logout();
-  },
-  'click #submitidea': function () {
+  }
+ /*, 'click #submitidea': function () {
                // console.log('Clicked submit button');
                 //alert('Show Dialog');
                 showCollectorDialog();
             }
-  
+  */
 
 })
 
