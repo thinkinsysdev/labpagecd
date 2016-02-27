@@ -1,0 +1,43 @@
+<template name="adminPage">
+<div class="adminPage">
+
+{{#if isInRole 'admin'}}
+		
+<div class="container">
+  <div class="pagecontainer">
+
+	
+		<div class="row">
+		<h2> Manage Projects and Epics </h2>
+		<div class="btn btnAdmin">
+			<a href="{{pathFor 'addProject'}}"> Add a Project </a>
+		</div>
+		<div class="btn btnAdmin">
+			<a href="{{pathFor 'addEpic'}}"> Add an Epic </a>
+		</div>
+		<div class="btn btnAdmin">
+			<a href="/admin"> Administer Collections and Users </a>
+		</div>
+		</div>
+		<div class="row">
+		<h2> Manage database </h2>
+		<div class="row">
+		{{> appDumpUI}}
+		</div>
+		</div>
+		</div>
+</div>
+	{{else}}
+		<div class="container">
+  <div class="pagecontainer">
+    <div class="errorLogin">
+      You have to login to view this page. Login <a href="{{pathFor 'login'}}"> here </a>.
+      </div>
+ </div>
+ </div>
+
+	{{/if}}
+	 </div>
+
+
+</template>
