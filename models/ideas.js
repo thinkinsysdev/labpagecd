@@ -17,7 +17,7 @@ Ideas.attachSchema(new SimpleSchema({
   },
   description: {
     type: String,
-    label: "Content",
+    label: "Description",
     optional: true
   },
   imgurl: {
@@ -34,13 +34,25 @@ Ideas.attachSchema(new SimpleSchema({
   },
   submitterInitials : {
     type: String,
-    label: "Initials",
-    optional: true
+    label: "Initials"
+    //optional: true
   },
   submitDate: {
   	type: Date,
   	label: "Date",
   	optional: true
+  },
+  createdAt: {
+    type: Date,
+    autoValue: function() {
+      if (this.isInsert) {
+        return new Date();
+      } else if (this.isUpsert) {
+        return {$setOnInsert: new Date()};
+      } else {
+        this.unset();  // Prevent user from supplying their own value
+      }
+    }
   },
    epics : {
     type: [String],

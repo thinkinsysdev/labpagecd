@@ -8,6 +8,19 @@ Template.ideas.helpers({
   EpicsList: function (){
   	return Epics.find({}, {sort: {label:1}});
   },
+  getImageURL: function() {
+
+  	var url = "/img/" + this.submitterInitials.toLowerCase() + ".png"
+  	console.log(url);
+  	return url;
+  },
+  getDate : function() {
+  		var day = moment(this.createdAt);
+  		console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
+
+  		//return (day.format('llll'));
+  		return (day.format('MMMM Do, YYYY'))
+  },
   //
   convertPhasetoIcon: function(strPhase) {
   	
