@@ -1,7 +1,23 @@
 <template name="addEpic">
+	{{#if isInRole 'admin'}}
  <div class="container">
 	<div class="pagecontainer">
-{{> quickForm collection="Epics" id="insertEpicForm" type="insert"}}
+	<div class="errorLogin">
+	<h2> Add an Epic </h2>
+	
+		{{> quickForm collection="Epics" id="insertEpicForm" type="insert"}}
 	</div>
 	</div>
+	</div>
+
+{{else}}
+	<div class="container">
+  <div class="pagecontainer">
+    <div class="errorLogin">
+      You have to login to view this page. Login <a href="{{pathFor 'login'}}"> here </a>.
+      </div>
+ </div>
+  </div>
+	{{/if}}
+	
 </template>

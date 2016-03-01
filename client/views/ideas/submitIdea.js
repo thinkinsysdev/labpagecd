@@ -18,7 +18,7 @@ Template.submitIdea.helpers({
  AutoForm.addHooks(['submitIdeaForm'], {
   onSuccess: function(operation, result, template) {
     FlashMessages.sendSuccess('Idea has been submitted successfully.');
-    Router.go("/LabIdeas");
+    Router.go("/ideas");
   }
 
 });

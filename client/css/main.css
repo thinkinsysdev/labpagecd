@@ -402,6 +402,7 @@ a.app_link{
 .about .iphone img{
 	width: 100%;
 	height: auto;
+	min-height:400px;
 }
 
 .about .features_list{

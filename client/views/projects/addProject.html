@@ -26,7 +26,9 @@
 {{else}}
 <div class="container">
   <div class="pagecontainer">
-      You have to login to view this page
+    <div class="errorLogin">
+      You have to login to view this page. Login <a href="{{pathFor 'login'}}"> here </a>.
+      </div>
  </div>
   </div>
 {{/if}}
