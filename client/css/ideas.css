@@ -104,9 +104,9 @@ color: #777;
 font-size: 12px;
 line-height: 22px;
 }
-img {
- min-height: 40px;
- max-height: 40px;
+
+img.Ideaimg {
+ height: 60px;
 }
 
 .btnNewIdea {
