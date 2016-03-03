@@ -11,7 +11,21 @@ Meteor.methods({
     // Got a network error, time-out or HTTP error in the 400 or 500 range.
     return false;
   }
-}
+},
+parseUpload: function(data) {
+    check( data, Array );
+
+    for ( let i = 0; i < data.length; i++ ) {
+      let item   = data[ i ],
+          exists = Ideas.findOne( { title: item.title } );
+         exists = false;
+      if ( !exists ) {
+        Ideas.insert( item );
+      } else {
+        console.warn( 'Rejected. This item already exists.' );
+      }
+    }
+  }
 
   /*requestSpace: function(eventtitle, eventdate, eventdesc){
 	  	//console.log('Request Received: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  

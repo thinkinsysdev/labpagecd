@@ -7,13 +7,13 @@ All code related to the Ideas collection goes here.
 /+ ---------------------------------------------------- */
 
 Ideas = new Mongo.Collection('ideas');
-
+OldIdeas = new Mongo.Collection('oldideas');
 
 Ideas.attachSchema(new SimpleSchema({
   title: {
     type: String,
     label: "Title",
-    max: 200
+    max: 500
   },
   description: {
     type: String,
@@ -37,14 +37,13 @@ Ideas.attachSchema(new SimpleSchema({
     label: "Initials"
     //optional: true
   },
-  submitDate: {
-  	type: Date,
-  	label: "Date",
-  	optional: true
+  submitterName: {
+    type: String,
+    optional: true
   },
   createdAt: {
-    type: Date,
-    autoValue: function() {
+    type: Date
+   /* autoValue: function() {
       if (this.isInsert) {
         return new Date();
       } else if (this.isUpsert) {
@@ -52,7 +51,7 @@ Ideas.attachSchema(new SimpleSchema({
       } else {
         this.unset();  // Prevent user from supplying their own value
       }
-    }
+    } */
   },
    epics : {
     type: [String],
@@ -62,7 +61,56 @@ Ideas.attachSchema(new SimpleSchema({
       group: 'epics',
       type: "select-checkbox-inline",
     }
-  } 
+  }
+  ,state : {
+    type: String,
+    autoValue : function() {
+      if (this.isInsert) {
+        return "0";
+      } 
+      else {
+        this.unset();
+      }
+      }
+    }
+  , sponsors : {
+    type: String,
+    label: "Sponsor[s] [Optional]",
+    optional: true,
+    autoform: {
+      type: 'text'
+    }
+  },
+  approvalStatus: {
+    type: String,
+     optional: true
+  },
+  strategicInitiative: {
+    type: String,
+     optional: true
+  },
+  onBTR : {
+    type:String,
+     optional: true
+  },
+  ideaStatus: {
+    type: String,
+     optional: true
+  },
+  targetStartDate : {
+    type: Date,
+     optional: true
+  },
+  targetEndDate : {
+    type: Date,
+     optional: true
+  },
+  environmentNeeds : {
+    type: String,
+    optional: true
+  }
+
+
  // epics: 
 
   
@@ -102,6 +150,12 @@ Meteor.methods({
     }else{
       throw new Meteor.Error(403, 'You do not have the rights to delete this item.')
     }
+  },
+  createOldIdea: function(idea) {
+    OldIdeas.insert(idea);
+  },
+  removeOldIdea: function(idea) {
+    OldIdeas.remove(idea._id);
   }
 });
 
