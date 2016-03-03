@@ -4,6 +4,17 @@
   <div class="pagecontainer">
    {{> flashMessages}}
 
+   <div class="item">
+		    <div class="item-content-block tags">
+		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
+		    
+		    	{{#each EpicsList}}
+		    	
+		    	<a id="filter" href="#">{{label}}</a>
+		    	{{/each}}
+		    </div>
+		</div>
+
   <!-- <div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
@@ -48,6 +59,10 @@
 							</div>
 					</div>
 					</div>
+	{{else}}
+	<div class="noIdeasMsg">
+		No ideas submitted for this epic. Please click on New to submit a new idea.
+	</div>	
 	{{/each}}		
 	</div>
 	</div>

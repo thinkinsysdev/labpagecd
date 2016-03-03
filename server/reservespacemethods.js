@@ -1,5 +1,19 @@
 Meteor.methods({
-  requestSpace: function(eventtitle, eventdate, eventdesc){
+
+ checkURL: function (url) {
+ // check(userId, String);
+  this.unblock();
+  try {
+    var result = HTTP.call("GET", url,
+                           {});
+    return true;
+  } catch (e) {
+    // Got a network error, time-out or HTTP error in the 400 or 500 range.
+    return false;
+  }
+}
+
+  /*requestSpace: function(eventtitle, eventdate, eventdesc){
 	  	//console.log('Request Received: ' + eventtitle + ' date: ' + eventdate + 'desc: ' + eventdesc);  
 	  	HTTP.call("POST", "https://maker.ifttt.com/trigger/ReserveSpace/with/key/dqu3p0dyh430dN0yJ54z1p",
           {data: {value1: eventtitle, value2: eventdate, value3: eventdesc}},
@@ -72,9 +86,9 @@ Meteor.methods({
 
             }
           });
-*/
 
-  } 
+
+  } */ 
  });
 
 
