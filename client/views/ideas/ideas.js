@@ -20,7 +20,7 @@ Template.ideas.helpers({
   },
   getDate : function() {
   		var day = moment(this.createdAt);
-  		console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
+  		//console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
 
   		//return (day.format('llll'));
   		return (day.format('MMMM Do, YYYY'))
@@ -29,7 +29,7 @@ Template.ideas.helpers({
   checkDefaultImage: function() {
   	if(this.imgurl == 'default') {
 
-  		strReturnImg = '<img style="width: 100%" src=/img/ideas/' + this._id + '.jpg>';
+  		strReturnImg = '<img style="width: 100%" src="/img/default.png>"';
   		//console.log(strReturnImg);
   	}
   	else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'

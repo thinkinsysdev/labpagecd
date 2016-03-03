@@ -74,7 +74,8 @@ Template.projects.helpers({
   checkDefaultImage: function() {
   	if(this.imgurl == 'default') {
 
-  		strReturnImg = '<img style="width: 100%" src=/img/projects/' + this._id + '.jpg>';
+  		strReturnImg = '<img style="width: 100%" src="/img/default.png" />';
+  	
   		//console.log(strReturnImg);
   	}
   	else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'
