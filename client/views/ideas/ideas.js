@@ -10,12 +10,13 @@ Template.ideas.helpers({
   },
   getImageURL: function() {
 
-  	var url = "http://10.240.111.222/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+  	var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+	return url;
+  //	var boolCheckURL = Meteor.call("checkURL", url);
+//  	if (boolCheckURL)
 
-  	var boolCheckURL = Meteor.call("checkURL", url);
-  	if (boolCheckURL)
-  	  	return url;
-  	 else return ("/img/cguser_default.png");
+ // 	  	return url;
+ // 	 else return ("/img/cguser_default.png");
   },
   getDate : function() {
   		var day = moment(this.createdAt);

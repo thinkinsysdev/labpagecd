@@ -26,7 +26,7 @@
 		    </div>
 		</div>
 	-->
-   	<div class="row" style="max-width:96%; margin-left:2%; padding-top:20px;">
+   	<div class="row" style="max-width:96%; margin-left:2%; margin-top:0px;">
 
 		<h3 style="color:white;">Ideas Backlog     <a class="btn btnNewIdea" href="{{pathFor 'submitIdea'}}"> New </a></h3>
 
@@ -37,7 +37,7 @@
     				<div class="message-item" id="m16">
 						<div class="message-inner">
 							<div class="message-head clearfix">
-								<div class="avatar pull-left"><a href=""><img class="Ideaimg" src="{{getImageURL submitterInitials}}"></a></div>
+								<div class="avatar pull-left"><a href=""><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></a></div>
 								<div class="user-detail">
 									<h5 class="handle">{{title}}</h5>
 									<div class="post-meta">
