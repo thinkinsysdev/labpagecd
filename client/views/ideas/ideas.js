@@ -15,7 +15,7 @@ Template.ideas.helpers({
   	var boolCheckURL = Meteor.call("checkURL", url);
   	if (boolCheckURL)
   	  	return url;
-  	 else return ("/img/tmb.png");
+  	 else return ("/img/cguser_default.png");
   },
   getDate : function() {
   		var day = moment(this.createdAt);
