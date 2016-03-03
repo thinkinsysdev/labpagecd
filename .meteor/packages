@@ -56,3 +56,4 @@ themeteorchef:bert
 reactive-var
 percolate:paginated-subscription
 sacha:spin
+meteorhacks:subs-manager

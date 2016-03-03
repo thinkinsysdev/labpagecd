@@ -81,6 +81,7 @@ meteorhacks:inject-data@1.4.1
 meteorhacks:inject-initial@1.0.3
 meteorhacks:npm@1.5.0
 meteorhacks:picker@1.0.3
+meteorhacks:subs-manager@1.6.3
 minifiers@1.1.7
 minimongo@1.0.10
 mobile-experience@1.0.1
