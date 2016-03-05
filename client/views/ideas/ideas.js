@@ -1,13 +1,55 @@
 
-Template.ideas.created = function () {
+Template.ideasList.created = function () {
   //
 };
 
-Template.ideas.helpers({
+Template.searchResultsIdeas.helpers ({
+  IdeasIndex: function() { return IdeasIndex;},
+  getImageURL: function() {
 
-  EpicsList: function (){
-  	return Epics.find({}, {sort: {label:1}});
+    var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+  return url;
+  //  var boolCheckURL = Meteor.call("checkURL", url);
+//    if (boolCheckURL)
+
+ //       return url;
+ //    else return ("/img/cguser_default.png");
   },
+  getDate : function() {
+      var day = moment(this.createdAt);
+      //console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
+
+      //return (day.format('llll'));
+      return (day.format('MMMM Do, YYYY'))
+  },
+  //
+  checkDefaultImage: function() {
+    if(this.imgurl == 'default') {
+
+      strReturnImg = '<img style="width: 100%" src="/img/default.png>"';
+      //console.log(strReturnImg);
+    }
+    else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'
+
+    return strReturnImg;
+
+  }
+
+});
+
+Template.ideas.helpers ({
+ IdeasIndex: function() { return IdeasIndex;},
+ EpicsList: function (){
+    return Epics.find({}, {sort: {label:1}});
+  }
+});
+
+
+Template.ideasList.helpers({
+  ideas: function() {
+    return Ideas.find({}, {sort: {createdAt: -1}});
+  },
+  
   getImageURL: function() {
 
   	var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
@@ -40,11 +82,11 @@ Template.ideas.helpers({
 
 });
 
-Template.ideas.rendered = function () {
+Template.ideasList.rendered = function () {
   //
 };
 
-Template.ideas.events({
+Template.ideasList.events({
 
 	'click #filter': function(e, t) {
 		e.preventDefault();

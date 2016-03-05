@@ -7,7 +7,7 @@ All code related to the Ideas collection goes here.
 /+ ---------------------------------------------------- */
 
 Ideas = new Mongo.Collection('ideas');
-OldIdeas = new Mongo.Collection('oldideas');
+//OldIdeas = new Mongo.Collection('oldideas');
 
 Ideas.attachSchema(new SimpleSchema({
   title: {
@@ -133,7 +133,7 @@ Ideas.allow({
 
 IdeasIndex = new EasySearch.Index({
   collection: Ideas,
-  fields: ['title', 'description'],
+  fields: ['title', 'description', 'submitterInitials', 'submitterName', 'sponsors'],
   engine: new EasySearch.Minimongo()
 });
 

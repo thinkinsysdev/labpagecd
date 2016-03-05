@@ -28,10 +28,38 @@
 	-->
    	<div class="row" style="max-width:96%; margin-left:2%; margin-top:0px;">
 
-		<h3 style="color:white;">Ideas Backlog     <a class="btn btnNewIdea" href="{{pathFor 'submitIdea'}}"> New </a></h3>
+		<h3 style="color:white;">Ideas Backlog   
+		
+	    <a class="btn btnNewIdea" href="{{pathFor 'submitIdea'}}"> New </a>
+
+	    </h3>
+
+	    <div class="search pull-right" style="width:100%;">
+<div class="searchText" style="width:50%;">
+Search: 
+</div>
+{{> EasySearch.Input index=IdeasIndex}}
+</div>
 
 	</div>
 	
+	{{#EasySearch.IfInputEmpty index=IdeasIndex}}
+  	{{> ideasList }}
+  	{{else}}
+  	{{> searchResultsIdeas}}	
+	{{/EasySearch.IfInputEmpty}}
+
+
+
+
+	</div>
+	</div>
+</template>
+	
+
+<template name="ideasList">
+
+This is the ideasList template
     <div class="qa-message-list" id="wallmessages">
     {{#each ideas}}
     				<div class="message-item" id="m16">
@@ -66,10 +94,49 @@
 	</div>	
 	{{/each}}		
 	</div>
-	</div>
+
+</template>
+
+<template name="searchResultsIdeas">
+	searchResults are here.
+	  <div class="qa-message-list" id="wallmessages">
+      {{#EasySearch.Each index=IdeasIndex}}
+    				<div class="message-item" id="m16">
+						<div class="message-inner">
+							<div class="message-head clearfix">
+								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div>
+
+								<div class="user-detail">
+									<h5 class="handle">{{title}}</h5>
+									<div class="post-meta">
+										<div class="asker-meta">
+											<span class="qa-message-what"></span>
+											<span class="qa-message-when">
+												<span class="qa-message-when-data">{{getDate createdAt}}</span>
+											</span>
+											<span class="qa-message-who">
+												<span class="qa-message-who-pad">by </span>
+												<span class="qa-message-who-data">{{submitterInitials}}</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="qa-message-content">
+								{{description}}
+							</div>
+					</div>
+					</div>
+	{{else}}
+	<div class="noIdeasMsg">
+		No ideas submitted for this epic. Please click on New to submit a new idea.
+	</div>	
+	{{/EasySearch.Each}}		
 	</div>
 </template>
-	<!--		
+
+
+<!--		
 					<div class="message-item" id="m9">
 						<div class="message-inner">
 							<div class="message-head clearfix">
