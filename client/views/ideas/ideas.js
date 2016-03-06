@@ -5,6 +5,9 @@ Template.ideasList.created = function () {
 
 Template.searchResultsIdeas.helpers ({
   IdeasIndex: function() { return IdeasIndex;},
+   ideas: function() {
+    return Template.parentData(1).ideas;
+  },
   getImageURL: function() {
 
     var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
@@ -33,6 +36,15 @@ Template.searchResultsIdeas.helpers ({
 
     return strReturnImg;
 
+  },
+  checkSponsors: function() {
+     if (this.sponsors) {
+        //console.log (this.sponsors);
+        if (this.sponsors.indexOf(",") > 0 )
+            return "Sponsors: " + this.sponsors;
+        else return "Sponsor: " + this.sponsors;
+     }
+     else return "";
   }
 
 });
@@ -47,7 +59,7 @@ Template.ideas.helpers ({
 
 Template.ideasList.helpers({
   ideas: function() {
-    return Ideas.find({}, {sort: {createdAt: -1}});
+    return Template.parentData(1).ideas;
   },
   
   getImageURL: function() {
@@ -78,6 +90,15 @@ Template.ideasList.helpers({
 
   	return strReturnImg;
 
+  },
+  checkSponsors: function() {
+     if (this.sponsors) {
+        //console.log (this.sponsors);
+        if (this.sponsors.indexOf(",") > 0 )
+            return "Sponsors: " + this.sponsors;
+        else return "Sponsor: " + this.sponsors;
+     }
+     else return "";
   }
 
 });
@@ -88,15 +109,28 @@ Template.ideasList.rendered = function () {
 
 Template.ideasList.events({
 
-	'click #filter': function(e, t) {
-		e.preventDefault();
-	
 
-		//console.log('Clicked filter button and value is: ' + $(e.target).text());
 
-		Router.go('/ideas/'+$(e.target).text());
+  
+});
 
-	}
+Template.searchResultsIdeas.events({
+
+  
+});
+
+Template.ideas.events({
+
+  'click #filter': function(e, t) {
+    e.preventDefault();
+  
+
+    //console.log('Clicked filter button and value is: ' + $(e.target).text());
+   // console.log($("#searchBar").find(":text"));
+   $(".searchBar").find(":text").val=null
+    Router.go('/ideas/'+$(e.target).text());
+
+  }
 
   
 });

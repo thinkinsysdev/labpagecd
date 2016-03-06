@@ -87,7 +87,7 @@ padding: 0 15px 0 0;
 .message-item .message-head .post-meta >div {
 color: #333;
 font-weight: bold;
-text-align: right;
+/*text-align: right; */
 }
 .post-meta > div {
 color: #777;
@@ -97,7 +97,7 @@ line-height: 22px;
 .message-item .message-head .post-meta >div {
 color: #333;
 font-weight: bold;
-text-align: right;
+/*text-align: right; */
 }
 .post-meta > div {
 color: #777;
@@ -123,4 +123,21 @@ float: right;
 	color:white;
 	padding-left:25px;
 	padding-bottom: 20px;
+}
+.qa-sponsor {
+	display: block;
+}
+
+input[type="text"] {
+    width: 50%;
+}
+
+
+.searchText {
+    color: white;
+    float: left;
+    margin-right: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 1.5em;
 }

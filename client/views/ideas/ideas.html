@@ -3,7 +3,7 @@
 <div class="container">
   <div class="pagecontainer">
    {{> flashMessages}}
-
+   <!--
    <div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
@@ -14,7 +14,7 @@
 		    	{{/each}}
 		    </div>
 		</div>
-
+-->
   <!-- <div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
@@ -26,21 +26,33 @@
 		    </div>
 		</div>
 	-->
-   	<div class="row" style="max-width:96%; margin-left:2%; margin-top:0px;">
+   	<div class="row ideaHeader" style="max-width:96%; margin-left:2%; margin-top:80px;">
+   	<a class="btn btnNewIdea pull-right" href="{{pathFor 'submitIdea'}}"> New </a>
 
-		<h3 style="color:white;">Ideas Backlog   
+		<!-- <div style="color:white;">Ideas Backlog</div> -->
 		
-	    <a class="btn btnNewIdea" href="{{pathFor 'submitIdea'}}"> New </a>
+	    
+<!--
+	    	<div class="col-lg-3">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-search"></span>
+             </button>
+             </span>
+             </div> /input-group 
+        </div> -->
 
-	    </h3>
 
-	    <div class="search pull-right" style="width:100%;">
-<div class="searchText" style="width:50%;">
+<div class="searchBar">    
+<div class="searchText">
 Search: 
 </div>
-{{> EasySearch.Input index=IdeasIndex}}
-</div>
 
+{{> EasySearch.Input placeholder="Search..." index=IdeasIndex}}
+
+ </div>
 	</div>
 	
 	{{#EasySearch.IfInputEmpty index=IdeasIndex}}
@@ -79,6 +91,7 @@ This is the ideasList template
 												<span class="qa-message-who-pad">by </span>
 												<span class="qa-message-who-data">{{submitterInitials}}</span>
 											</span>
+											<span class="qa-sponsor"> {{checkSponsors sponsors }} </span>
 										</div>
 									</div>
 								</div>
@@ -116,8 +129,12 @@ This is the ideasList template
 											</span>
 											<span class="qa-message-who">
 												<span class="qa-message-who-pad">by </span>
-												<span class="qa-message-who-data">{{submitterInitials}}</span>
+												<span class="qa-message-who-data">{{submitterInitials}}
+												</span>
+												
+											
 											</span>
+										<span class="qa-sponsor"> {{checkSponsors sponsors }} </span>
 										</div>
 									</div>
 								</div>
