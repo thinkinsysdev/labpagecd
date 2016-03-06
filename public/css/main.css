@@ -20,7 +20,12 @@
 
 
 
-
+form#addReservationForm {
+    color: white;
+   /* width: 70%;
+    margin-left: 15%; */
+    padding-top: 20px;
+}
 
 
 
@@ -381,6 +386,12 @@ a.app_link{
 		background-color:#333333;
 }
 
+.aboutPage{
+	padding: 0px 0 60px 0;
+	color:white;
+		background-color:#333333;
+}
+
 .about .iphone{
 	/*max-width: 339px;*/
 	position: relative;
@@ -391,6 +402,7 @@ a.app_link{
 .about .iphone img{
 	width: 100%;
 	height: auto;
+	min-height:400px;
 }
 
 .about .features_list{
@@ -491,6 +503,7 @@ a.app_link{
 	font-size: 20px;
 	margin: 50px 0 0 0;
 	word-break: break-word;
+	font-weight:600;
 }
 
 .app_features p{

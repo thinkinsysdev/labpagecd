@@ -439,6 +439,7 @@ background: white;
 
 form#submitIdeaForm {
 	color:white;
+	padding-top: 20px;
 }
 
 input#initialsInput {
