@@ -3,7 +3,7 @@
 <div class="container">
   <div class="pagecontainer">
    {{> flashMessages}}
-   <!--
+   
    <div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
@@ -14,7 +14,7 @@
 		    	{{/each}}
 		    </div>
 		</div>
--->
+
   <!-- <div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'ideas'}}>All</a>
@@ -26,7 +26,7 @@
 		    </div>
 		</div>
 	-->
-   	<div class="row ideaHeader" style="margin-top:80px;">
+   	<div class="row ideaHeader">
    	<a class="btn btnNewIdea pull-right" href="{{pathFor 'submitIdea'}}"> New </a>
 
 		<!-- <div style="color:white;">Ideas Backlog</div> -->
@@ -47,7 +47,7 @@
 
 <div class="searchBar">    
 <div class="searchText">
-Search: 
+Search Submitted Ideas: 
 </div>
 
 {{> EasySearch.Input placeholder="Search..." index=IdeasIndex}}

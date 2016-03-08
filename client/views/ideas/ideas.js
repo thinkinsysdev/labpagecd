@@ -123,11 +123,16 @@ Template.ideas.events({
 
   'click #filter': function(e, t) {
     e.preventDefault();
-  
-
+    //Session.set("view", "filter");
+    //searchTerm = $("input[type=text]");
+   
+    var evt = jQuery.Event("keyup");
+    evt.which=13;
     //console.log('Clicked filter button and value is: ' + $(e.target).text());
    // console.log($("#searchBar").find(":text"));
-   $(".searchBar").find(":text").val=null
+   $("input[type=text]").val(""); //$(e.target).text()
+   $("input[type=text]").trigger(evt);
+    
     Router.go('/ideas/'+$(e.target).text());
 
   }
