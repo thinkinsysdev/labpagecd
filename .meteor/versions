@@ -11,6 +11,7 @@ aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
 autoupdate@1.2.4
+awatson1978:browser-detection@1.0.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
 base64@1.0.4
@@ -75,6 +76,7 @@ logging@1.0.8
 mdg:validation-error@0.2.0
 meteor@1.1.10
 meteor-base@1.0.1
+meteor-platform@1.2.3
 meteorhacks:async@1.0.0
 meteorhacks:fast-render@2.11.0
 meteorhacks:inject-data@1.4.1
@@ -123,6 +125,7 @@ sha@1.0.4
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 srp@1.0.4
+standard-app-packages@1.0.6
 standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0

@@ -57,3 +57,4 @@ reactive-var
 percolate:paginated-subscription
 sacha:spin
 meteorhacks:subs-manager
+awatson1978:browser-detection
