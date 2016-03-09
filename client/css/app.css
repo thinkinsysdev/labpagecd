@@ -439,9 +439,31 @@ background: white;
 
 form#submitIdeaForm {
 	color:white;
-	padding-top: 20px;
+	/*padding-top: 20px;*/
+	 margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 80px;
 }
 
 input#initialsInput {
     max-width: 20%;
+}
+
+form#editIdeaForm {
+    color: white;
+    /*padding-top: 20px;*/
+     margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 80px;
+}
+
+form#editProjectForm {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 80px;
+    color:white;
+}
+
+input.strInput {
+    width: 100% !important;
 }

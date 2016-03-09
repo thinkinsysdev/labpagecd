@@ -108,8 +108,7 @@ Template.ideasList.rendered = function () {
 };
 
 Template.ideasList.events({
-
-
+  
 
   
 });

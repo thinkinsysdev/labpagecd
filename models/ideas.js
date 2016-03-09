@@ -20,6 +20,11 @@ Ideas.attachSchema(new SimpleSchema({
     label: "Description",
     optional: true
   },
+  jiraID: {
+    type: String,
+    label: "JIRA ID",
+    optional: true
+  },
   imgurl: {
     type: String,
     label: "Submitter",

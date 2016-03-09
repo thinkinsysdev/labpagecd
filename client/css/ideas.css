@@ -76,8 +76,8 @@ overflow: hidden;
 }
 .message-item .message-head .user-detail h5 {
 padding-bottom: 8px;
-font-size: 26px;
-font-weight: 500;
+font-size: 1.4em;
+font-weight: 100;
 margin: 0;
 }
 .message-item .message-head .post-meta {
@@ -106,8 +106,8 @@ line-height: 22px;
 }
 
 img.Ideaimg {
- height: 100px;
- width: 100px;
+ height: 80px;
+ width: 80px;
 }
 
 .btnNewIdea {

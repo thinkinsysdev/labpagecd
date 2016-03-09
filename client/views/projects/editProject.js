@@ -1,4 +1,4 @@
-Template.addProject.helpers({
+Template.editProject.helpers({
  EpicList: function () {
     console.log(Epics.find().count());
 
@@ -34,7 +34,8 @@ Template.addProject.helpers({
     })
 */
      
-   }, 
+   },
+
 	/*EpicOptions: function() {
     return [
       {label: "Analytics", value: "Analytics"},
@@ -70,7 +71,7 @@ Template.addProject.helpers({
    
 });
 
- AutoForm.addHooks(['addProjectForm'], {
+ AutoForm.addHooks(['editProjectForm'], {
   onSuccess: function(operation, result, template) {
     FlashMessages.sendSuccess('Project has been submitted successfully.');
    Router.go("/projects");
@@ -78,7 +79,7 @@ Template.addProject.helpers({
 
 });
 
-AutoForm.addHooks(['addProjectForm'], {
+AutoForm.addHooks(['editProjectForm'], {
 onError : function(operation, result, template) {
     console.log('Error triggered');
     FlashMessages.sendError('Your request cannot be completed. Please contact TMB (x51643).');
@@ -86,7 +87,7 @@ onError : function(operation, result, template) {
   }
   });
 
-Template.addProject.events({
+Template.editProject.events({
   'click .cancel': function(e, t) {
     e.preventDefault();
     Router.go('/projects');

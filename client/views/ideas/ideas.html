@@ -77,6 +77,12 @@ This is the ideasList template
     				<div class="message-item" id="m16">
 						<div class="message-inner">
 							<div class="message-head clearfix">
+								<div class="pull-right"> 
+									{{#if isInRole 'admin'}}
+										  <a href="{{pathFor 'editIdea'}}"> Edit </a>
+
+									{{/if}}
+								</div>
 								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div>
 
 								<div class="user-detail">
@@ -117,6 +123,12 @@ This is the ideasList template
     				<div class="message-item" id="m16">
 						<div class="message-inner">
 							<div class="message-head clearfix">
+							<div class="pull-right"> 
+									{{#if isInRole 'admin'}}
+										  <a href="{{pathFor 'editIdea'}}"> Edit </a>
+
+									{{/if}}
+								</div>
 								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div>
 
 								<div class="user-detail">

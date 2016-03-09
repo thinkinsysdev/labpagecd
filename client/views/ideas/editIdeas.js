@@ -1,6 +1,6 @@
-Template.submitIdea.helpers({
+Template.editIdea.helpers({
  EpicList: function () {
-    console.log(Epics.find().count());
+   // console.log(Epics.find().count());
 
     epics = Epics.find();
 
@@ -12,18 +12,21 @@ Template.submitIdea.helpers({
 
     console.log(epicl);
    return epicl;
- }  
+ },
+ selectedIdea: function() {
+  //return Ideas.find(Session.get("selectedIdea"));
+ }
 });
 
- AutoForm.addHooks(['submitIdeaForm'], {
+ AutoForm.addHooks(['editIdeaForm'], {
   onSuccess: function(operation, result, template) {
-    FlashMessages.sendSuccess('Idea has been submitted successfully.');
+    FlashMessages.sendSuccess('Updates to idea has been saved successfully.');
     Router.go("/ideas");
   }
 
 });
 
-AutoForm.addHooks(['submitIdeaForm'], {
+AutoForm.addHooks(['editIdeaForm'], {
 onError : function(operation, result, template) {
     console.log('Error triggered');
     FlashMessages.sendError('Your request cannot be completed. Please contact TMB (x51643).');
@@ -31,11 +34,11 @@ onError : function(operation, result, template) {
   }
   });
 
-Template.submitIdea.events({
+
+Template.editIdea.events({
   'click .cancel': function(e, t) {
     e.preventDefault();
     Router.go('/ideas');
   }
 
 });
-  

@@ -1,29 +1,25 @@
-<template name="submitIdea">
+<template name="editIdea">
 <div class="container">
   <div class="pagecontainer">
    {{> flashMessages}}
-   {{#autoForm collection="Ideas" id="submitIdeaForm" type="insert"}}
+   <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
+   {{#autoForm collection="Ideas" doc=idea id="editIdeaForm" type="update"}}
    <fieldset>
-   <div>
-      
-   	<legend> Submit an Idea</legend>    
-   </div>
+   	<legend> Edit an Idea </legend>
    	{{> afQuickField name='title' class='strInput'}}
    	{{> afQuickField name='description' rows = 3}}
-      {{> afQuickField name='jiraID'}}
+        {{> afQuickField name='jiraID'}}
 	 {{> afQuickField name='exturl' class='strInput'}}
    {{> afQuickField name='sponsors'}}
    {{> afQuickField name='epics' options=EpicList}}
    {{> afQuickField id='initialsInput' name='submitterInitials'}}
    
 
-<!--	{{> afQuickField name='epic' options=EpicOptions}}
-{{> afQuickField name='labPhase' options=PhaseOptions}} -->
    </fieldset>
    <div>
-   <button type="submit" class="btn btn-primary"> Insert </button>
-    <button type="button" class="btn btn-default cancel">Cancel</button>
-    </div>
+   <button type="submit" class="btn btn-primary"> Save </button>
+   <button type="button" class="btn btn-default cancel">Cancel</button>
+   </div>
    {{/autoForm}}
  </div>
 </div>

@@ -26,6 +26,6 @@ Meteor.publish('allIdeas', function() {
 	return Ideas.find();
 })
 
-Meteor.publish('singleIdea', function() {
+Meteor.publish('singleIdea', function(id) {
 	return Ideas.find(id);
 })

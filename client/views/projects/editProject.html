@@ -1,22 +1,22 @@
-<template name="addProject">
+<template name="editProject">
 {{#if isAdmin}}
 <div class="container">
   <div class="pagecontainer">
    {{> flashMessages}}
 
    <!-- {{> quickForm collection="Projects" id="insertProjectForm" type="insert"}} -->
-   {{#autoForm collection="Projects" id="addProjectForm" type="insert"}}
+   {{#autoForm collection="Projects" doc=project id="editProjectForm" type="update"}}
    <fieldset>
-   	<legend> Add a Project </legend>
-   	{{> afQuickField name='title' class='strInput'}}
-   	{{> afQuickField name='summary' rows = 3}}
-	{{> afQuickField name='imgurl' class='strInput'}}
+    <legend> Edit Project</legend>
+    {{> afQuickField name='title' class='strInput'}}
+    {{> afQuickField name='summary' rows = 3}}
+  {{> afQuickField name='imgurl' class='strInput'}}
    {{> afQuickField name='exturl' class='strInput'}}
    {{> afQuickField name='epics' options=EpicList}}
    {{> afQuickField name='labPhase'}} 
 
 
-<!--	{{> afQuickField name='epic' options=EpicOptions}}
+<!--  {{> afQuickField name='epic' options=EpicOptions}}
 {{> afQuickField name='labPhase' options=PhaseOptions}} -->
    </fieldset>
    <div>
