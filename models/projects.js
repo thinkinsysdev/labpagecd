@@ -34,7 +34,11 @@ Projects.attachSchema(new SimpleSchema({
   exturl: {
     type: String,
     label: "Link to Confluence/Sharepoint",
-    optional: true
+    optional: true,
+    regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+         type: "url"
+      }
   },
   labcontactname: {
     type: String,

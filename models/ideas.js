@@ -35,7 +35,12 @@ Ideas.attachSchema(new SimpleSchema({
   exturl: {
     type: String,
     label: "URL [Optional]",
-    optional: true
+    optional: true, 
+      regEx: SimpleSchema.RegEx.Url,
+      autoform: {
+         type: "url"
+      }
+    
   },
   submitterInitials : {
     type: String,
