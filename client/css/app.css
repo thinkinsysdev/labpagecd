@@ -185,9 +185,7 @@ a.emailButton {
     font-size:24px;
 }
 
-form#addProjectForm {
-	color:white;
-}
+
 
 legend {
 
@@ -440,8 +438,8 @@ background: white;
 form#submitIdeaForm {
 	color:white;
 	/*padding-top: 20px;*/
-	 margin-right: 10%;
-    margin-left: 10%;
+	 margin-right: 5%;
+    margin-left: 5%;
     margin-top: 80px;
 }
 
@@ -452,16 +450,23 @@ input#initialsInput {
 form#editIdeaForm {
     color: white;
     /*padding-top: 20px;*/
-     margin-right: 10%;
-    margin-left: 10%;
+     margin-right:5%;
+    margin-left:5%;
     margin-top: 80px;
 }
 
 form#editProjectForm {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
     margin-top: 80px;
     color:white;
+}
+
+form#addProjectForm {
+	color:white;
+	 margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 80px;
 }
 
 input.strInput {
