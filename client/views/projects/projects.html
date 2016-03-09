@@ -97,7 +97,9 @@
 			{{#each projects}}
     		<div class="[ col-sm-4 col-md-3 ]">
 				<div class="[ info-card ]">
-					{{{checkDefaultImage imgurl}}}<!--src="/img/sample_300.jpg" /> -->
+					<img style="width:100%;" src="{{getImageURL imgurl}}" onError="this.src='/img/default.png'" />
+
+				<!--	{{{checkDefaultImage imgurl}}} --> <!--src="/img/sample_300.jpg" /> -->
 					<div class="[ info-card-details ] animate">
 						<div class="[ info-card-header ]">
 							<!--<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>-->

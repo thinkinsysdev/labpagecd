@@ -74,15 +74,32 @@ Template.projects.helpers({
   checkDefaultImage: function() {
   	if(this.imgurl == 'default') {
 
-  		strReturnImg = '<img style="width: 100%" src="/img/default.png" />';
+  		strReturnImg = '<img style="width: 100%;" src="/img/projects/' + this._id  +'.jpg" onError=" />';
   	
   		//console.log(strReturnImg);
+		return strReturnImg;
   	}
-  	else return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>'
+  	else { return strReturnImg = '<img style="width: 100%" src=' + this.imgurl + '>' };
 
-  	return strReturnImg;
+  	
 
-  }
+  },
+	getImageURL: function() {
+
+	if(this.imgurl == 'default') {
+		strReturnImg="/img/projects/" + this._id + ".jpg";
+		return strReturnImg;
+	}
+	else { return this.imgurl; }
+/*
+	    var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+	  return url;
+	  //  var boolCheckURL = Meteor.call("checkURL", url);
+	//    if (boolCheckURL)
+
+	 //       return url;
+	 //    else return ("/img/cguser_default.png"); */
+	  } 
 
 });
 
