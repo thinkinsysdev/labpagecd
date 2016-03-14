@@ -170,7 +170,7 @@ header .social li:first-child{
 	display: block;
 	position: relative;
 	width: 100%;
-	height:900px;
+	height:700px;
 	background: url('../img/photo-wicker.jpg') no-repeat fixed center center;	
 	background-size: cover;
 }
