@@ -11,7 +11,8 @@ Template.searchResultsIdeas.helpers ({
   getImageURL: function() {
 
    // var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
-  var url = "http://mysite/Person.aspx?accountname=CGUSER\\" + this.submitterInitials.toUpperCase();
+ // var url = "http://mysite/Person.aspx?accountname=CGUSER\\" + this.submitterInitials.toUpperCase();
+var url = "http://mysite/User%20Photos/Profile%20Pictures/CGUSER_" + this.submitterInitials.toUpperCase() + "_LThumb.jpg";
 
   return url;
  
@@ -61,7 +62,8 @@ Template.ideasList.helpers({
   getImageURL: function() {
 
   	//var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
-var url = "http://mysite/Person.aspx?accountname=CGUSER\\" + this.submitterInitials.toUpperCase();
+//var url = "http://mysite/Person.aspx?accountname=CGUSER\\" + this.submitterInitials.toUpperCase();
+var url = "http://mysite/User%20Photos/Profile%20Pictures/CGUSER_" + this.submitterInitials.toUpperCase() + "_LThumb.jpg";
 
 	return url;
   
