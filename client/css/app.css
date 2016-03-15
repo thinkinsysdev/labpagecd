@@ -469,3 +469,51 @@ form#addProjectForm {
 input.strInput {
     width: 100% !important;
 }
+
+form#loginForm {
+	margin-top: 80px;
+	color:white;
+}
+
+.login {
+    margin-top:80px;
+}
+.set-logo {
+    background:#fff;
+    color:#ddd;
+    border-radius:500%;
+    padding:11px;
+    font-size:108px;
+    border: solid #ddd 14px;
+}
+.logo {
+    margin-top:27px;
+    margin-bottom:54px;
+}
+
+.last-row {
+    margin-bottom:0px;
+}
+
+.checklabel {
+    font-weight:100;
+}
+
+input#loginUserName {
+    width: 100% !important;
+}
+
+img.loginimg {
+    width: 300px;
+}
+
+button#logoutButton {
+    width: 15%;
+    margin-top: 20px;
+}
+
+button#goBack {
+    width: 15%;
+    margin-top: 20px;
+    margin-right: 20px;
+}

@@ -14,7 +14,8 @@ var users = [{name:"tmb", email:"tmb@capgroup.com", roles:['admin']},
       {name:"jtfl", email:"jtfl@capgroup.com", roles:['admin']},
       {name:"jbxr", email:"jbxr@capgroup.com", roles:['admin']},
       {name:"axxs", email:"axxs@capgroup.com", roles:['admin']},
-      {name:"maum", email:"maum@capgroup.com", roles:['admin']}
+      {name:"maum", email:"maum@capgroup.com", roles:['admin']},
+      {name:"prrh", email:"prrh@capgroup.com", roles:['admin']}
      /* {name:"Normal User",email:"normal@example.com",roles:[]},
       {name:"View-Secrets User",email:"view@example.com",roles:['view-secrets']},
       {name:"Manage-Users User",email:"manage@example.com",roles:['manage-users']}, */

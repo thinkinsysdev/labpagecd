@@ -17,8 +17,8 @@ Template.login.helpers({
 })
 
 Template.login.events({
-
-    'submit #loginForm' : function(e, t){
+    'click #loginButton' : function(e, t){
+    //'submit #loginForm' : function(e, t){
       e.preventDefault();
       // retrieve the input field values
       var username = t.find('#loginUserName').value
