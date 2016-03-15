@@ -91,14 +91,7 @@ Template.projects.helpers({
 		return strReturnImg;
 	}
 	else { return this.imgurl; }
-/*
-	    var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
-	  return url;
-	  //  var boolCheckURL = Meteor.call("checkURL", url);
-	//    if (boolCheckURL)
 
-	 //       return url;
-	 //    else return ("/img/cguser_default.png"); */
 	  } 
 
 });
@@ -111,10 +104,6 @@ Template.projects.events({
 
 	'click #filter': function(e, t) {
 		e.preventDefault();
-	
-
-		//console.log('Clicked filter button and value is: ' + $(e.target).text());
-
 		Router.go('/projects/'+$(e.target).text());
 
 	}

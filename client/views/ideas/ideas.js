@@ -12,17 +12,11 @@ Template.searchResultsIdeas.helpers ({
 
     var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
   return url;
-  //  var boolCheckURL = Meteor.call("checkURL", url);
-//    if (boolCheckURL)
-
- //       return url;
- //    else return ("/img/cguser_default.png");
+ 
   },
   getDate : function() {
       var day = moment(this.createdAt);
-      //console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
-
-      //return (day.format('llll'));
+   
       return (day.format('MMMM Do, YYYY'))
   },
   //
@@ -66,17 +60,11 @@ Template.ideasList.helpers({
 
   	var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
 	return url;
-  //	var boolCheckURL = Meteor.call("checkURL", url);
-//  	if (boolCheckURL)
-
- // 	  	return url;
- // 	 else return ("/img/cguser_default.png");
+  
   },
   getDate : function() {
   		var day = moment(this.createdAt);
-  		//console.log (day.get('date') +  day.get('month') + ", " + day.get('year'));
-
-  		//return (day.format('llll'));
+  		
   		return (day.format('MMMM Do, YYYY'))
   },
   //
@@ -122,13 +110,11 @@ Template.ideas.events({
 
   'click #filter': function(e, t) {
     e.preventDefault();
-    //Session.set("view", "filter");
-    //searchTerm = $("input[type=text]");
+ 
    
     var evt = jQuery.Event("keyup");
     evt.which=13;
-    //console.log('Clicked filter button and value is: ' + $(e.target).text());
-   // console.log($("#searchBar").find(":text"));
+    
    $("input[type=text]").val(""); //$(e.target).text()
    $("input[type=text]").trigger(evt);
     

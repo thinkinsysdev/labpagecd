@@ -7,7 +7,7 @@ All code related to the Ideas collection goes here.
 /+ ---------------------------------------------------- */
 
 Ideas = new Mongo.Collection('ideas');
-//OldIdeas = new Mongo.Collection('oldideas');
+
 
 Ideas.attachSchema(new SimpleSchema({
   title: {

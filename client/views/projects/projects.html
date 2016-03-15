@@ -1,86 +1,11 @@
-<!-- <template name="projects">
-<div class="pagecontainer">
 
-  <h3>Projects: </h3>
-  <ul>
-    {{#each projects}}
-      <li><a href="{{pathFor "project"}}">{{title}}</a></li>
-    {{/each}}
-  </ul>
-  </div>
-</template>
--->
 
 <template name="projects">
 <div class="container">
   <div class="pagecontainer">
    {{> flashMessages}}
 		<div class="projectPortfolio">
-		<!-- <h2> Projects: </h2> -->
-		<!--
-		<div class="item phase">
-				<div class="label phase">
-				<div class= "[col-sm-4 col-md-3 col-lg-3] phase">
-					
-					<i class="fa fa-lightbulb-o"></i> 
-					<a id="filterPhase" href="#">Idea </a>
-				</div>
-				</div>
-
-				<div class="label phase">
-				<div class= "[col-sm-4 col-md-3 col-lg-3] phase">
-
-					<i class="fa fa-lightbulb-o"></i> 
-					<a id="filterPhase" href="#">Test</a>
-				</div>
-				</div>
-
-
-				<div class="label phase">
-				<div class= "[col-sm-4 col-md-3 col-lg-3] phase ">
-					
-					<i class="fa fa-lightbulb-o"></i> 
-					<a id="filterPhase" href="#">Graduate</a>
-					
-				</div>
-				</div>
-
-				<div class="label phase">
-				<div class= "[col-sm-4 col-md-3 col-lg-3] phase">
-					<i class="fa fa-lightbulb-o"></i> 
-					<a id="filterPhase" href="#">Archive</a>
-				</div>
-				</div>
-			</div>
-			-->
-		<!--
-		<div class="phases">
-		{{#sidebarLeft width="300px"}}
-			<ul>
-				<li> Temp </li>
-				<li> Temp </li>
-								<li> Temp </li>
-												<li> Temp </li>
-																<li> Temp </li>
-			</ul>
-		{{/sidebarLeft}}
-		</div>
-		-->
-	<!--	<div class="item">
-		    <div class="item-content-block">
-		    	<div class="block-title">Projects</div>
-		    </div> 
-		    <div class="item-content-block tags">
-		    	<a id="allfilter" href={{pathFor 'projects'}}>All</a>
-		    	<a id="filter" href="#">Analytics</a> 
-		    	<a id="filter" href="#">Business Platform</a>
-		    	<a id="filter" href="#">Digital Workspace</a> 
-		    	<a id="filter" href="#">Infrastructure</a> 
-		    	<a id="filter" href="#">Modern Apps</a> 
-		    	<a id="filter" href="#">Security</a> 
-		    </div>
-		</div>
-		-->
+	
 	<div class="item">
 		    <div class="item-content-block tags">
 		    	<a id="allfilter" href={{pathFor 'projects'}}>All</a>
@@ -100,18 +25,17 @@
 				<div class="[ info-card ]">
 					<img style="width:100%;" src="{{getImageURL imgurl}}" onError="this.src='/img/default.png'" />
 
-				<!--	{{{checkDefaultImage imgurl}}} --> <!--src="/img/sample_300.jpg" /> -->
+			
 					<div class="[ info-card-details ] animate">
 						<div class="[ info-card-header ]">
-							<!--<h1> <a href="{{pathFor "project"}}"> {{title}}</a> </h1>-->
-							<!--<h1> <a href="{{exturl}}" target='_blank'> {{title}}</a> </h1>-->
+						
 
 							<h1> {{title}} </h1> {{#if isInRole 'admin'}}
 				 <a href="{{pathFor 'editProject'}}"> Edit </a>
 			{{/if}}
 							<h3 class="tags"> {{tags}} </h3>
 							{{{convertPhasetoIcon labPhase}}}
-							<!--	<h3> <span class="label"> Digital Workspace </span> </h3> -->
+							
 						</div>
 						<div class="[ info-card-detail ]">
 							<!-- Description -->

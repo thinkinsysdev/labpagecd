@@ -1,14 +1,4 @@
-/*Template.addReservation.helpers({
-	ServiceOptions: function() {
-    return [
-      {label: "Refreshments", value: "Refreshments"},
-      {label: "Lunch", value: "Lunch"},
-      {label: "Technology Support", value: "Technology Support"}
-     ] 
-    }
-  
-	
-}); */
+
 
 AutoForm.addHooks(['addReservationForm'], {
   onSuccess: function(operation, result, template) {

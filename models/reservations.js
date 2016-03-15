@@ -77,16 +77,6 @@ Reservations.attachSchema(new SimpleSchema({
     type: [String],
     //label : "Services",
     optional: true,
-    //allowedValues:  ["Breakfast", "Refreshments", "Lunch", "Technology Support", "Video Conference"],
-    /*options: function() {
-    return [
-      {label: "Breakfast", value: "Breakfast"},
-      {label: "Lunch", value: "Lunch"},
-      {label: "Cookies/Drinks", value: "Cookies/Drinks"},
-      {label: "Technology Support", value: "Technology Support"},
-       {label: "Video Conference", value: "Video Conference"},
-     ] 
-    },*/
     autoform: {
       group: 'reqservices',
       type: "select-checkbox-inline",

@@ -28,7 +28,7 @@ Meteor.publish('allIdeas', function() {
 
 Meteor.publish('allReservations', function() {
 	return Reservations.find({}, {sort: {createdAt: -1}})
-})
+});
 
 Meteor.publish('singleIdea', function(id) {
 	return Ideas.find(id);
