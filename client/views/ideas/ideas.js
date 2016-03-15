@@ -60,7 +60,9 @@ Template.ideasList.helpers({
   
   getImageURL: function() {
 
-  	var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+  	//var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
+var url = "http://mysite/Person.aspx?accountname=CGUSER\\" + this.submitterInitials.toUpperCase();
+
 	return url;
   
   },
