@@ -23,9 +23,13 @@ Meteor.publish('allEpics', function() {
 });
 
 Meteor.publish('allIdeas', function() {
-	return Ideas.find();
+	return Ideas.find({}, {sort: {createdAt: -1}});
+});
+
+Meteor.publish('allReservations', function() {
+	return Reservations.find({}, {sort: {createdAt: -1}})
 })
 
 Meteor.publish('singleIdea', function(id) {
 	return Ideas.find(id);
-})
+});

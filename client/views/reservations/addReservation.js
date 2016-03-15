@@ -13,6 +13,8 @@
 AutoForm.addHooks(['addReservationForm'], {
   onSuccess: function(operation, result, template) {
     FlashMessages.sendSuccess('Your request has been submitted successfully. Please contact PRRH/TMB if you have any questions.');
+    Meteor.call("requestSpace");
+
     Router.go("/");
   }
 
