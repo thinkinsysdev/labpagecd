@@ -1,0 +1,11 @@
+1. Be consistent in the taxonomy => phases vs process (Ideate, Hypothesize vs. Ideation, Hypothesis)
+2. Workbench projects - timeline for phases
+3. Timeline of the phases for our process on the home page- webmechanics ux design
+4. Services section format - tabular view - e.g. MAUM
+5. Kiosk view / mode
+6. Grammar checks
+7. Documentation on starting and stopping the server
+8. Links to confluence and JIRA
+9. Client side integration to JIRA
+10. Validation checks on forms
+11. Phase filters - Ideation/Hypothesis/Experimentation

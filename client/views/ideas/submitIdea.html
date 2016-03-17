@@ -8,19 +8,18 @@
       
    	<legend> Submit an Idea</legend>    
    </div>
+   {{> afQuickField id='initialsInput' name='submitterInitials'}}
    	{{> afQuickField name='title' class='strInput'}}
    	{{> afQuickField name='description' rows = 3}}
-      {{> afQuickField name='jiraID'}}
-	 {{> afQuickField name='exturl' class='strInput'}}
    {{> afQuickField name='sponsors'}}
    {{> afQuickField name='epics' options=EpicList}}
-   {{> afQuickField id='initialsInput' name='submitterInitials'}}
+  
    
 
 
    </fieldset>
    <div>
-   <button type="submit" class="btn btn-primary"> Insert </button>
+   <button type="submit" class="btn btn-primary"> Submit </button>
     <button type="button" class="btn btn-default cancel">Cancel</button>
     </div>
    {{/autoForm}}

@@ -44,7 +44,7 @@ Ideas.attachSchema(new SimpleSchema({
   },
   submitterInitials : {
     type: String,
-    label: "Initials"
+    label: "Your Initials*"
     //optional: true
   },
   submitterName: {
@@ -65,7 +65,7 @@ Ideas.attachSchema(new SimpleSchema({
   },
    epics : {
     type: [String],
-    label: "Enterprise Themes [Optional]",
+    label: "Enterprise Themes [Optional] - Choose all that apply",
     optional: true,
     autoform: {
       group: 'epics',
@@ -85,7 +85,7 @@ Ideas.attachSchema(new SimpleSchema({
     }
   , sponsors : {
     type: String,
-    label: "Sponsor[s] [Optional]",
+    label: "Idea Sponsor[s] [Optional]",
     optional: true,
     autoform: {
       type: 'text'
