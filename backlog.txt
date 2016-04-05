@@ -1,4 +1,5 @@
 1. Be consistent in the taxonomy => phases vs process (Ideate, Hypothesize vs. Ideation, Hypothesis)
+2. Create a spreadsheet of ideas submitted to the lab between Oct 2015 and Mar 2016.
 2. Workbench projects - timeline for phases
 3. Timeline of the phases for our process on the home page- webmechanics ux design
 4. Services section format - tabular view - e.g. MAUM

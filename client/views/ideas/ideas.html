@@ -57,7 +57,8 @@ This is the ideasList template
 								<div class="pull-right"> 
 									{{#if isInRole 'admin'}}
 										  <a href="{{pathFor 'editIdea'}}"> Edit </a>
-
+										  |
+										  <a href="{{pathForJira jiraID}}" > Jira </a>
 									{{/if}}
 								</div>
 								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div>
@@ -103,7 +104,9 @@ This is the ideasList template
 							<div class="pull-right"> 
 									{{#if isInRole 'admin'}}
 										  <a href="{{pathFor 'editIdea'}}"> Edit </a>
-
+ 											|
+										  <a href="{{pathForJira jiraID}}" > Jira </a>
+									
 									{{/if}}
 								</div>
 								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div>

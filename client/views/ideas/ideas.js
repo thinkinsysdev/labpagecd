@@ -8,6 +8,17 @@ Template.searchResultsIdeas.helpers ({
    ideas: function() {
     return Template.parentData(1).ideas;
   },
+   pathForJira: function(jiraID) {
+   // var url = '<a href="http://jira.capgroup.com/issues/' + jiraID + '" > Jira </a>';
+    if (!jiraID)
+          { return "http://jira.capgroup.com"; }
+    else {
+      console.log(jiraID);
+    var url = "http://jira.capgroup.com/issues/" + jiraID;
+    console.log (url);
+    return url;
+    }
+  },
   getImageURL: function() {
 
    // var url = "/img/Images/cguser_" + this.submitterInitials.toLowerCase() + "_lthumb.jpg";
@@ -57,6 +68,17 @@ Template.ideas.helpers ({
 Template.ideasList.helpers({
   ideas: function() {
     return Template.parentData(1).ideas;
+  },
+  pathForJira: function(jiraID) {
+   // var url = '<a href="http://jira.capgroup.com/issues/' + jiraID + '" > Jira </a>';
+    if (!jiraID)
+          { return "http://jira.capgroup.com"; }
+    else {
+      console.log(jiraID);
+    var url = "http://jira.capgroup.com/issues/" + jiraID;
+    console.log (url);
+    return url;
+    }
   },
   
   getImageURL: function() {
