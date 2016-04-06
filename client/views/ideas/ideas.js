@@ -61,6 +61,9 @@ Template.ideas.helpers ({
  IdeasIndex: function() { return IdeasIndex;},
  EpicsList: function (){
     return Epics.find({}, {sort: {label:1}});
+  },
+  attributes: function() {
+    return ({placeholder: "  Search..." })
   }
 });
 
