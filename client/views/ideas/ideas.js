@@ -11,11 +11,11 @@ Template.searchResultsIdeas.helpers ({
    pathForJira: function(jiraID) {
    // var url = '<a href="http://jira.capgroup.com/issues/' + jiraID + '" > Jira </a>';
     if (!jiraID)
-          { return "http://jira.capgroup.com"; }
+          { return "https://jira.capgroup.com"; }
     else {
-      console.log(jiraID);
-    var url = "http://jira.capgroup.com/issues/" + jiraID;
-    console.log (url);
+     // console.log(jiraID);
+    var url = "https://jira.capgroup.com/browse/" + jiraID;
+   // console.log (url);
     return url;
     }
   },
@@ -75,11 +75,11 @@ Template.ideasList.helpers({
   pathForJira: function(jiraID) {
    // var url = '<a href="http://jira.capgroup.com/issues/' + jiraID + '" > Jira </a>';
     if (!jiraID)
-          { return "http://jira.capgroup.com"; }
+          { return "https://jira.capgroup.com"; }
     else {
-      console.log(jiraID);
-    var url = "http://jira.capgroup.com/issues/" + jiraID;
-    console.log (url);
+  //    console.log(jiraID);
+    var url = "https://jira.capgroup.com/browse/" + jiraID;
+  //  console.log (url);
     return url;
     }
   },
