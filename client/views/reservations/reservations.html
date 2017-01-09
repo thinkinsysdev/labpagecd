@@ -2,11 +2,11 @@
 <template name="reservations">
 <div class="container">
   <div class="reservationpagecontainer">
-   {{> flashMessages}}
+   
    <div style="color:white;">
    <h2> Reservation Requests </h2>
    </div>
-   {{> reservationList}}
+   <p style="color:white;"> Please contact your Lab Point of Contact to reserve the lab. </p>
 
 
 
@@ -14,57 +14,3 @@
 	</div>
 </template>
 	
-
-<template name="reservationList">
-
-
-    <div class="qa-message-list" id="wallmessages">
-    {{#each reservations}}
-    				<div class="message-item" id="m16">
-						<div class="message-inner">
-							<div class="message-head clearfix">
-								<!-- <div class="pull-right"> 
-									{{#if isInRole 'admin'}}
-										  <a href="{{pathFor 'editReservation'}}"> Edit </a>
-
-									{{/if}}
-								</div> 
-								<div class="avatar pull-left"><img class="Ideaimg" src="{{getImageURL submitterInitials}}" onError="this.src='/img/cguser_default.png'"></div> -->
-
-								<div class="user-detail">
-									<h5 class="handle">{{title}}</h5>
-									<div class="post-meta">
-										<div class="asker-meta">
-											<span class="qa-message-what"></span>
-											<span class="qa-message-when">
-												<span class="qa-message-when-data bold">{{getDate reqBegin}}</span> to 
-												<span class="qa-message-when-data bold">{{getDate reqEnd}}</span>
-											</span>
-											<span class="qa-message-who">
-												<span class="qa-message-who-pad">by </span>
-												<span class="qa-message-who-data">{{contactname}}</span>
-											</span>
-											<span class="qa-sponsor"> {{checkSponsors sponsors }} </span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="qa-message-content">
-								{{summary}}
-								<br />
-								Space: {{requestSpace}}
-								<br />
-								Services: {{services}}
-							</div>
-					</div>
-					</div>
-	{{else}}
-	<div class="noIdeasMsg">
-		No ideas submitted for this epic. Please click on New to submit a new idea.
-	</div>	
-	{{/each}}		
-	</div>
-
-</template>
-
-
