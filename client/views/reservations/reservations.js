@@ -1,4 +1,4 @@
-
+/*
 
 
 Template.reservationList.helpers({
@@ -51,3 +51,4 @@ Template.ideas.events({
 
   
 });
+*/
